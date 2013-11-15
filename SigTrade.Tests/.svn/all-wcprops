@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/SigTrade2/!svn/ver/668/trunk/SigTrade.Tests
+END
+MembershipRepositoryTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/SigTrade2/!svn/ver/95/trunk/SigTrade.Tests/MembershipRepositoryTest.cs
+END
+MembershipTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/SigTrade2/!svn/ver/95/trunk/SigTrade.Tests/MembershipTest.cs
+END
+HomeControllerTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/SigTrade2/!svn/ver/3/trunk/SigTrade.Tests/HomeControllerTest.cs
+END
+AuthoringTests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/SigTrade2/!svn/ver/3/trunk/SigTrade.Tests/AuthoringTests.txt
+END
+AddReviewControllerTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/SigTrade2/!svn/ver/668/trunk/SigTrade.Tests/AddReviewControllerTest.cs
+END
+MeetingLibTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/SigTrade2/!svn/ver/668/trunk/SigTrade.Tests/MeetingLibTest.cs
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SigTrade2/!svn/ver/668/trunk/SigTrade.Tests/App.config
+END
+PhaseTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/SigTrade2/!svn/ver/259/trunk/SigTrade.Tests/PhaseTest.cs
+END
+ProcessReviewControllerTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/SigTrade2/!svn/ver/95/trunk/SigTrade.Tests/ProcessReviewControllerTest.cs
+END
+SignificantTrade.Tests.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/SigTrade2/!svn/ver/668/trunk/SigTrade.Tests/SignificantTrade.Tests.csproj
+END

@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnSaveSpecies" xml:space="preserve">
+    <value>Save current selection</value>
+  </data>
+  <data name="btnSelected" xml:space="preserve">
+    <value>Select combination</value>
+  </data>
+  <data name="lblAddComment" xml:space="preserve">
+    <value>Insert comment:</value>
+  </data>
+  <data name="lblAddCommentType" xml:space="preserve">
+    <value>Comment Access:</value>
+  </data>
+  <data name="lblAddCommittee" xml:space="preserve">
+    <value>Select a committee:</value>
+  </data>
+  <data name="lblAddCountry" xml:space="preserve">
+    <value>Select country</value>
+  </data>
+  <data name="lblAddCountryTitle" xml:space="preserve">
+    <value>Add the Country</value>
+  </data>
+  <data name="lblAddDateStarted" xml:space="preserve">
+    <value>Date </value>
+  </data>
+  <data name="lblAddDeadline" xml:space="preserve">
+    <value>Select deadline</value>
+  </data>
+  <data name="lblAddDocument" xml:space="preserve">
+    <value>Document Link:</value>
+  </data>
+  <data name="lblAddMeeting" xml:space="preserve">
+    <value>Select a meeting:</value>
+  </data>
+  <data name="lblAddPhase" xml:space="preserve">
+    <value>Select the Phase</value>
+  </data>
+  <data name="lblAddPhaseTitle" xml:space="preserve">
+    <value>Review Phase</value>
+  </data>
+  <data name="lblAddReviewAnimals" xml:space="preserve">
+    <value>Animal</value>
+  </data>
+  <data name="lblAddReviewCommittee" xml:space="preserve">
+    <value>2) Select Committee</value>
+  </data>
+  <data name="lblAddReviewCountry" xml:space="preserve">
+    <value>5) Select Country</value>
+  </data>
+  <data name="lblAddReviewDate" xml:space="preserve">
+    <value>4) Select Review Date</value>
+  </data>
+  <data name="lblAddReviewGenus" xml:space="preserve">
+    <value>Genus:</value>
+  </data>
+  <data name="lblAddReviewKingdom" xml:space="preserve">
+    <value>3) Select Kingdom</value>
+  </data>
+  <data name="lblAddReviewPhase" xml:space="preserve">
+    <value>1) Select Phase</value>
+  </data>
+  <data name="lblAddReviewPlants" xml:space="preserve">
+    <value>Plant</value>
+  </data>
+  <data name="lblAddReviewSpecies" xml:space="preserve">
+    <value>Species:</value>
+  </data>
+  <data name="lblAddReviewSpeciesFS" xml:space="preserve">
+    <value>4) Select Genus/Species</value>
+  </data>
+  <data name="lblAddReviewSubSpecies" xml:space="preserve">
+    <value>SubSpecies:</value>
+  </data>
+  <data name="lblAddReviewTitle" xml:space="preserve">
+    <value>Add a new Review</value>
+  </data>
+  <data name="lblAddReviewTypeAdhoc" xml:space="preserve">
+    <value>Ad-Hoc</value>
+  </data>
+  <data name="lblAddReviewTypeNormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="lblAddSpeciesTitle" xml:space="preserve">
+    <value>Add the Species</value>
+  </data>
+  <data name="lblClass" xml:space="preserve">
+    <value>Select a Class</value>
+  </data>
+  <data name="lblCountryList" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="lblDateList" xml:space="preserve">
+    <value>Date Added</value>
+  </data>
+  <data name="lblEditCommentTitle" xml:space="preserve">
+    <value>Edit Comment</value>
+  </data>
+  <data name="lblFamily" xml:space="preserve">
+    <value>Select a Family</value>
+  </data>
+  <data name="lblGenus" xml:space="preserve">
+    <value>Select a Genus</value>
+  </data>
+  <data name="lblKingdom.Text" xml:space="preserve">
+    <value>Select a kingdom:</value>
+  </data>
+  <data name="lblKingdomList" xml:space="preserve">
+    <value>Kingdom </value>
+  </data>
+  <data name="lblOrder" xml:space="preserve">
+    <value>Select an Order</value>
+  </data>
+  <data name="lblPAComments" xml:space="preserve">
+    <value>Comments:</value>
+  </data>
+  <data name="lblPACommittee" xml:space="preserve">
+    <value>Committee</value>
+  </data>
+  <data name="lblPACompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="lblPADateCompleted" xml:space="preserve">
+    <value>Completed Date</value>
+  </data>
+  <data name="lblPADateStarted" xml:space="preserve">
+    <value>Date Started</value>
+  </data>
+  <data name="lblPADeadline" xml:space="preserve">
+    <value>Deadline Date</value>
+  </data>
+  <data name="lblPADetails" xml:space="preserve">
+    <value>Stage</value>
+  </data>
+  <data name="lblPADocuments" xml:space="preserve">
+    <value>Documents:</value>
+  </data>
+  <data name="lblPAMeeting" xml:space="preserve">
+    <value>Meeting</value>
+  </data>
+  <data name="lblPhaseList" xml:space="preserve">
+    <value>Phase </value>
+  </data>
+  <data name="lblPhylum" xml:space="preserve">
+    <value>Select a Phylum</value>
+  </data>
+  <data name="lblReviewIndexTitle" xml:space="preserve">
+    <value>Add a Review</value>
+  </data>
+  <data name="lblReviewsList" xml:space="preserve">
+    <value>List of reviews currently active</value>
+  </data>
+  <data name="lblReviewTypeList" xml:space="preserve">
+    <value>Review Type</value>
+  </data>
+  <data name="lblSelectedSpecies" xml:space="preserve">
+    <value>Selected Species/Country</value>
+  </data>
+  <data name="lblSpecies" xml:space="preserve">
+    <value>Select a Species</value>
+  </data>
+  <data name="lblStatusList" xml:space="preserve">
+    <value>Review Status </value>
+  </data>
+  <data name="lblTaxonNameList" xml:space="preserve">
+    <value>Taxon Name </value>
+  </data>
+  <data name="lblTaxonRankList" xml:space="preserve">
+    <value>Taxon Rank </value>
+  </data>
+  <data name="textSaveAdd" xml:space="preserve">
+    <value>Save + Add Another one</value>
+  </data>
+  <data name="textSaveList" xml:space="preserve">
+    <value>Save and Return to List</value>
+  </data>
+  <data name="lblAddDocumentAccess" xml:space="preserve">
+    <value>Document Access</value>
+  </data>
+  <data name="lblFreeSearch" xml:space="preserve">
+    <value>Enter the Species (e.g genus + species)</value>
+  </data>
+  <data name="lblSearchPageTitle" xml:space="preserve">
+    <value>Search for Review</value>
+  </data>
+  <data name="lblSearchText" xml:space="preserve">
+    <value>The CITES Review of Significant Trade procedure (defined in &lt;a href="http://www.cites.org/eng/res/12/12-08R13.shtml"&gt;Conf. 12.8 (Rev. CoP13)&lt;/a&gt;)
+was designed to identify species that may be subject to unsustainable levels of international trade, and to identify problems and solutions concerning effective implementation of the Convention.
+ 
+This system tracks the progress of species for the range States that have been selected for review, through the 22 stages of the Significant Trade Review Procedure. Species/country combinations currently subject to review are included, as well as those that have been eliminated from review, following satisfactory reports from the range State.</value>
+  </data>
+  <data name="lblSearchCountry" xml:space="preserve">
+    <value>Or search by country:</value>
+  </data>
+  <data name="lblSearchOr" xml:space="preserve">
+    <value>OR</value>
+  </data>
+  <data name="lblNoSearchResults" xml:space="preserve">
+    <value>No Search Results Found!</value>
+  </data>
+  <data name="lblAddReviewFormLegend" xml:space="preserve">
+    <value>Please add your review data below</value>
+  </data>
+  <data name="hdDetailsAction" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="hdDetailsActionOrder" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="hdDetailsParagraph" xml:space="preserve">
+    <value>Stage</value>
+  </data>
+  <data name="titleParagraphDetailsAdd" xml:space="preserve">
+    <value>Stage Details Add</value>
+  </data>
+  <data name="lblAddActors" xml:space="preserve">
+    <value>Select Actors</value>
+  </data>
+  <data name="lblRoleAccess" xml:space="preserve">
+    <value>Access Rights</value>
+  </data>
+  <data name="lblParagraphList" xml:space="preserve">
+    <value>Stage</value>
+  </data>
+  <data name="lblEditReviewTitle" xml:space="preserve">
+    <value>Edit Review</value>
+  </data>
+  <data name="lblEditReviewFormLegend" xml:space="preserve">
+    <value>Please make your changes and save</value>
+  </data>
+  <data name="lblPAConcern" xml:space="preserve">
+    <value>New Concern Level:</value>
+  </data>
+  <data name="lblAddRecDate" xml:space="preserve">
+    <value>Recommendation Date</value>
+  </data>
+  <data name="lblAddRecDeadline" xml:space="preserve">
+    <value>Deadline Date</value>
+  </data>
+  <data name="lblAddRecommendation" xml:space="preserve">
+    <value>Recommendation</value>
+  </data>
+  <data name="lblConcernList" xml:space="preserve">
+    <value>Lvl Concern</value>
+  </data>
+  <data name="lblDeadlineList" xml:space="preserve">
+    <value>Deadline</value>
+  </data>
+  <data name="lblPACurrentConcern" xml:space="preserve">
+    <value>Current Concern:</value>
+  </data>
+  <data name="lblPASelectActors" xml:space="preserve">
+    <value>Select Actors:</value>
+  </data>
+  <data name="lblDetailsText" xml:space="preserve">
+    <value>The stages are defined in paragraphs (a) to (v) of Conf. 12.8 (Rev. CoP13)</value>
+  </data>
+  <data name="lblAccountFormFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="lblAccountFormLegend" xml:space="preserve">
+    <value>Account Information</value>
+  </data>
+  <data name="lblReviewsListIntro" xml:space="preserve">
+    <value>Current reviews in progress. Click a review to see its current status.</value>
+  </data>
+  <data name="lblAccountChangePasswordConfirmPassword" xml:space="preserve">
+    <value>Confirm new password</value>
+  </data>
+  <data name="lblAccountChangePasswordCurrentPassword" xml:space="preserve">
+    <value>Current password</value>
+  </data>
+  <data name="lblAccountChangePasswordLegend" xml:space="preserve">
+    <value>Enter your new password details below</value>
+  </data>
+  <data name="lblAccountChangePasswordNewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="lblAccountChangePasswordNote" xml:space="preserve">
+    <value>Please use the form below to change your password.
+         Please note, new passwords are required to be a minimum of 6 characters long.</value>
+  </data>
+  <data name="lblAccountChangePasswordSubmit" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="lblAccountChangePasswordSuccess" xml:space="preserve">
+    <value>Your password has been changed successfully.</value>
+  </data>
+  <data name="lblAccountChangePasswordTitle" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="lblAccountChangePasswordToolTip" xml:space="preserve">
+    <value>Password| Please note, passwords must be a minimum of 6 characters.</value>
+  </data>
+  <data name="lblAccountEditNote" xml:space="preserve">
+    <value>You can edit the account below.</value>
+  </data>
+  <data name="lblAccountEditTitle" xml:space="preserve">
+    <value>Edit Account</value>
+  </data>
+  <data name="lblAccountFormAddress1" xml:space="preserve">
+    <value>Address 1</value>
+  </data>
+  <data name="lblAccountFormAddress2" xml:space="preserve">
+    <value>Address 2</value>
+  </data>
+  <data name="lblAccountFormAddress3" xml:space="preserve">
+    <value>Address 3</value>
+  </data>
+  <data name="lblAccountFormConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="lblAccountFormContactInfo" xml:space="preserve">
+    <value>Enter contact information</value>
+  </data>
+  <data name="lblAccountFormCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="lblAccountFormEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblAccountFormLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="lblAccountFormOptional" xml:space="preserve">
+    <value>optional</value>
+  </data>
+  <data name="lblAccountFormPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="lblAccountFormPostcode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="lblAccountFormRegister" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="lblAccountFormStateCounty" xml:space="preserve">
+    <value>State or County</value>
+  </data>
+  <data name="lblAccountFormTelephone" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="lblAccountFormTownCity" xml:space="preserve">
+    <value>Town or City</value>
+  </data>
+  <data name="lblAccountFormUserName" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="lblAccountListLogOnPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="lblAccountListLogOnRemember" xml:space="preserve">
+    <value>Remember me?</value>
+  </data>
+  <data name="lblAccountListLogOnSubmit" xml:space="preserve">
+    <value>Log On</value>
+  </data>
+  <data name="lblAccountListLogOnUsername" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="lblAccountListTableEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblAccountListTableUsername" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="lblAccountListTitle" xml:space="preserve">
+    <value>List Users</value>
+  </data>
+  <data name="lblAccountListUsers" xml:space="preserve">
+    <value>List Users</value>
+  </data>
+  <data name="lblAccountLogOnLegend" xml:space="preserve">
+    <value>Account Information</value>
+  </data>
+  <data name="lblAccountLogOnNote" xml:space="preserve">
+    <value>Please enter your username and password.</value>
+  </data>
+  <data name="lblAccountLogOnTitle" xml:space="preserve">
+    <value>Log On</value>
+  </data>
+  <data name="lblAccountNewCreateText" xml:space="preserve">
+    <value>You can create a new account below.</value>
+  </data>
+  <data name="lblAccountNewTitle" xml:space="preserve">
+    <value>Create a New Account</value>
+  </data>
+  <data name="lblAccountShowDetail" xml:space="preserve">
+    <value>Detail for</value>
+  </data>
+  <data name="lblAccountShowLegend" xml:space="preserve">
+    <value>Update Roles</value>
+  </data>
+  <data name="lblAccountShowTitle" xml:space="preserve">
+    <value>Show User</value>
+  </data>
+  <data name="lblAccountShowToolTip" xml:space="preserve">
+    <value>Select the security level of to users| 
+    &lt;p&gt;These settings affect both the ability to update data, and view data.&lt;/p&gt;
+    &lt;p&gt;Please note the following hierachy:&lt;/p&gt;
+    &lt;h6&gt;Data writing&lt;/h6&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Administrator&lt;/li&gt;
+        &lt;li&gt;Data Manager&lt;/li&gt;
+        &lt;li&gt;Data Contributor&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h6&gt;Data reading&lt;/h6&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Full Viewer&lt;/li&gt;
+        &lt;li&gt;Intermediate Viewer&lt;/li&gt;
+        &lt;li&gt;Public Viewer&lt;/li&gt;
+    &lt;/ul&gt;
+  
+    &lt;div class="notice"&gt;Selecting a higher level will automatically select lower security levels.&lt;/div&gt;</value>
+  </data>
+  <data name="lblCommitteeDescription" xml:space="preserve">
+    <value>Committee Description</value>
+  </data>
+  <data name="lblCommitteeEditTitle" xml:space="preserve">
+    <value>Edit Committee</value>
+  </data>
+  <data name="lblCommitteeLegend" xml:space="preserve">
+    <value>Committee Details</value>
+  </data>
+  <data name="lblCommitteeListDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblCommitteeListTitle" xml:space="preserve">
+    <value>Committees</value>
+  </data>
+  <data name="lblCommitteeNotes" xml:space="preserve">
+    <value>You can create a new committee below.</value>
+  </data>
+  <data name="lblCommitteeSubmit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="lblCommitteeTitle" xml:space="preserve">
+    <value>Create Committee</value>
+  </data>
+  <data name="lblFooter" xml:space="preserve">
+    <value>This database was created by and is maintained by &lt;a href="http://www.unep-wcmc.org"&gt;UNEP-WCMC&lt;/a&gt; on behalf of the CITES Secretariat.</value>
+  </data>
+  <data name="lblMeetingEditLegend" xml:space="preserve">
+    <value>Meeting details</value>
+  </data>
+  <data name="lblMeetingEditTitle" xml:space="preserve">
+    <value>Edit Meeting</value>
+  </data>
+  <data name="lblMeetingLegend" xml:space="preserve">
+    <value>Enter meeting details</value>
+  </data>
+  <data name="lblMeetingLibDate" xml:space="preserve">
+    <value>Meeting Date</value>
+  </data>
+  <data name="lblMeetingLibDescription" xml:space="preserve">
+    <value>Meeting Description</value>
+  </data>
+  <data name="lblMeetingLibNumber" xml:space="preserve">
+    <value>Meeting Number</value>
+  </data>
+  <data name="lblMeetingLibSubmit" xml:space="preserve">
+    <value>Create Meeting</value>
+  </data>
+  <data name="lblMeetingLibUpdate" xml:space="preserve">
+    <value>Update Meeting</value>
+  </data>
+  <data name="lblMeetingListCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="lblMeetingListComittee" xml:space="preserve">
+    <value>Comittee</value>
+  </data>
+  <data name="lblMeetingListDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="lblMeetingListTitle" xml:space="preserve">
+    <value>List Meetings</value>
+  </data>
+  <data name="lblMeetingTitle" xml:space="preserve">
+    <value>Create Meeting</value>
+  </data>
+  <data name="lblPhaseCreateTitle" xml:space="preserve">
+    <value>Create New Phase</value>
+  </data>
+  <data name="lblPhaseEditTitle" xml:space="preserve">
+    <value>Edit Phase</value>
+  </data>
+  <data name="lblPhaseFormDescription" xml:space="preserve">
+    <value>Phase Description</value>
+  </data>
+  <data name="lblPhaseFormLegend" xml:space="preserve">
+    <value>Phase Details</value>
+  </data>
+  <data name="lblPhaseFormStartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="lblPhaseFormSubmit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="lblPhaseListDescription" xml:space="preserve">
+    <value>Phase Description</value>
+  </data>
+  <data name="lblPhaseListStartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="lblPhaseListTitle" xml:space="preserve">
+    <value>List Phases</value>
+  </data>
+  <data name="lblPhaseNote" xml:space="preserve">
+    <value>You can create a new phase below.</value>
+  </data>
+  <data name="lblPhaseTitle" xml:space="preserve">
+    <value>Create Phase</value>
+  </data>
+  <data name="lblRedStar" xml:space="preserve">
+    <value>indicates a required field.</value>
+  </data>
+  <data name="lblRoleListName" xml:space="preserve">
+    <value>Role Name</value>
+  </data>
+  <data name="lblRoleListTitle" xml:space="preserve">
+    <value>Listing Roles</value>
+  </data>
+  <data name="lblRoleShowLegend" xml:space="preserve">
+    <value>Add another user to this role</value>
+  </data>
+  <data name="lblRoleShowTitle" xml:space="preserve">
+    <value>Show Role</value>
+  </data>
+  <data name="lblRoleTableEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblRoleTableRemoveUser" xml:space="preserve">
+    <value>Remove user from role</value>
+  </data>
+  <data name="lblRoleTableUsername" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="lblUserDetailsAccessRights" xml:space="preserve">
+    <value>You have access rights</value>
+  </data>
+  <data name="lblUserDetailsWelcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="lblAddDecision" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="lblAddLiftedDate" xml:space="preserve">
+    <value>Suspension Lifted Date</value>
+  </data>
+  <data name="lblAddSuspensionDate" xml:space="preserve">
+    <value>Decision/Suspension Date</value>
+  </data>
+  <data name="lblAddTradeTerms" xml:space="preserve">
+    <value>Trade Terms</value>
+  </data>
+  <data name="lblDecisionType" xml:space="preserve">
+    <value>Decision Type</value>
+  </data>
+  <data name="lblLiftedCommitee" xml:space="preserve">
+    <value>Meeting at which suspension was lifted</value>
+  </data>
+  <data name="lblSuspensionCommittee" xml:space="preserve">
+    <value>Meeting at which suspension was established</value>
+  </data>
+  <data name="lblDocLegend" xml:space="preserve">
+    <value>Document Legend</value>
+  </data>
+  <data name="lblAddHyperlink" xml:space="preserve">
+    <value>OR Add Hyperlink</value>
+  </data>
+  <data name="lblAttachDocument" xml:space="preserve">
+    <value>Attach Document</value>
+  </data>
+  <data name="lblMessageTemplateSubmit" xml:space="preserve">
+    <value>Create Template</value>
+  </data>
+  <data name="lblAccountPasswordReminderInstructions" xml:space="preserve">
+    <value>Type your e-mail address into the box and a new password will be sent to you.</value>
+  </data>
+  <data name="lblForgottenPassword" xml:space="preserve">
+    <value>Forgotten Password</value>
+  </data>
+  <data name="lblForgottenPasswordQuestion" xml:space="preserve">
+    <value>Forgotten Password?</value>
+  </data>
+  <data name="lblPasswordReset" xml:space="preserve">
+    <value>Password Reset</value>
+  </data>
+  <data name="lblPassWordResetSuccessful" xml:space="preserve">
+    <value>A new password has been e-mailed to the address which you provided.</value>
+  </data>
+</root>

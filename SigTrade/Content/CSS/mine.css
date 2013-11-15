@@ -1,0 +1,54 @@
+﻿     
+   .divpos {  
+   float:left;  
+   text-align: center;  
+   margin: 10px;  
+   }  
+   
+   .selectpos {  
+   width: 200px;  
+   height: 80px;  
+   } 
+    
+   .selectactor {  
+   width: 270px;  
+   height: 80px;  
+   } 
+   
+    .msg_list {
+    margin: 0px;
+    padding: 0px;
+    
+    }
+    
+    .msg_head {
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;    
+    color:#666;
+    margin:1px;
+    }
+    
+    .msg_body {
+    padding: 5px 10px 15px;
+    background-color:#F4F4F8;
+    
+    }
+    
+    .divleft {
+    float: left;
+    width: 50px;
+    padding: 10px;
+    background-color: #ffc;
+    }
+    .divright {
+    float: left;
+    width: 100px;
+    padding: 10px;
+    background-color: #ffc;
+    }
+    
+    .divleft1 { float:left; width:30%;}
+    .divright1 { margin-left:40%; width:30%;}
+    
+   

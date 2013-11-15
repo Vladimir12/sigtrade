@@ -1,0 +1,21 @@
+<profile>
+		  <providers>
+			  <clear/>
+			  <add name="AspNetSqlProfileProvider" type="System.Web.Profile.SqlProfileProvider, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" connectionStringName="SignificantTradeSS" applicationName="/"/>
+		  </providers>
+		  <properties>
+			  <add name="first_name" type="string"/>
+			  <add name="last_name" type="string"/>
+              <add name="organization" type="string"/>
+			  <add name="address_1" type="string"/>
+			  <add name="address_2" type="string"/>
+			  <add name="address_3" type="string"/>
+			  <add name="town" type="string"/>
+			  <add name="city" type="string"/>
+			  <add name="state" type="string"/>
+			  <add name="postcode" type="string"/>
+			  <add name="country_id" type="System.Int32"/>
+			  <add name="telephone" type="string"/>
+    </properties>
+
+	  </profile>

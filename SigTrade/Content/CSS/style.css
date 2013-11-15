@@ -1,0 +1,104 @@
+/* tables 
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../images/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+
+*/
+
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+	border-top:1px solid #CDCDCD;
+}
+
+table.tablesorter td, table.tablesorter th
+{
+    border-bottom:1px solid #CDCDCD;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #fff;
+
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../images/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+
+
+/*JQUERY-UI + BLUEPRINT CSS CALENDAR FIX*/
+.ui-datepicker-calendar table{
+  margin: 0; }
+.ui-datepicker-calendar th , .ui-datepicker-calendar td {
+  padding: 0; text-align: center; background:white; color:#333;  }
+.ui-datepicker-calendar th{
+  padding: 5px 0; }
+.ui-datepicker-calendar td{
+  padding:0 2px 2px 0; }
+.ui-datepicker-calendar td a{
+  padding:0 1px 0 0; }
+.ui-datepicker {
+  font-size:0.8em; }

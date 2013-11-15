@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessRightsAdmin" xml:space="preserve">
+    <value>Droits d’accès|Accès total aux données et droits utilisateurs </value>
+  </data>
+  <data name="AccessRightsDataContributor" xml:space="preserve">
+    <value>Droits d’accès|Possibilité de fournir des réponses au Secrétariat</value>
+  </data>
+  <data name="AccessRightsDataManager" xml:space="preserve">
+    <value>Droits d’accès|Droits de données pour les étapes approuvées</value>
+  </data>
+  <data name="AccessRightsFullViewer" xml:space="preserve">
+    <value>Droits d’accès|Possibilité de consulter toutes les informations</value>
+  </data>
+  <data name="AccessRightsIntermediateViewer" xml:space="preserve">
+    <value>Droits d’accès|Possibilité de consulter certaines informations</value>
+  </data>
+  <data name="AccessRightsPublicViewer" xml:space="preserve">
+    <value>Droits d’accès|Possibilité de consulter certaines informations</value>
+  </data>
+  <data name="Account_LogOn" xml:space="preserve">
+    <value>|L’accès à certaines zones du site est réservé aux administrateurs et aux gestionnaires de données. </value>
+  </data>
+  <data name="AddReview_AddReview_1" xml:space="preserve">
+    <value>Sélectionner une phase | Sélectionnez la nouvelle phase. De nouvelles phases peuvent être ajoutées par les administrateurs en utilisant l’admin. de site &gt; Phases &gt; Nouvelle phase</value>
+  </data>
+  <data name="AddReview_AddReview_2" xml:space="preserve">
+    <value>Sélectionner un règne|Sélectionnez un règne ('animal' ou 'végétal)</value>
+  </data>
+  <data name="AddReview_AddReview_3" xml:space="preserve">
+    <value>Sélectionner un genre | Une fois le genre sélectionné, les espèces de ce genre figureront dans la case « espèces » pour la sélection.</value>
+  </data>
+  <data name="AddReview_AddReview_4" xml:space="preserve">
+    <value>Sélectionner un pays | Seuls les États de l’aire de répartition connus de l’espèce sélectionnée peuvent être ajoutés. Si un pays est retenu pour l’étude mais ne figure pas sur la liste, veuillez contacter l’administrateur.</value>
+  </data>
+  <data name="AddReview_List_1" xml:space="preserve">
+    <value>Niveau de préoccupation | La &lt;/i&gt; catégorie de &lt;i&gt;"niveau de préoccupation" est déterminée par le Comité pour les animaux ou par le Comité pour les plantes après examen de la biologie, de la gestion et des niveaux de commerce international de l’espèce, par le Secrétariat ou des consultants, et après examen des réponses fournies par les États de l’aire de répartition. &lt;br&gt;&lt;br&gt;Il existe trois catégories : &lt;br&gt;&lt;b&gt;Les espèces dont il faut se préoccuper en urgence &lt;/b&gt; qui inclut les espèces urgence": espèces pour lesquelles les informations disponibles indiquent que les dispositions de l'Article IV, paragraphe 2 a), 3 ou 6 a), ne sont pas appliquées &lt;br&gt; &lt;b&gt;Les espèces peut-être préoccupantes &lt;/b&gt; qui inclut les espèces pour lesquelles il n’est pas clair que ces dispositions soient appliquées &lt;br&gt; &lt;b&gt;Les espèces moins préoccupantes &lt;/b&gt; qui inclut les espèces pour lesquelles il apparaît que les informations disponibles indiquent que ces dispositions sont en train d'être appliquées.</value>
+  </data>
+  <data name="AddReview_List_2" xml:space="preserve">
+    <value>Phase | Le processus de sélection pour ajouter de nouvelles espèces à l’étude a lieu périodiquement dans &lt;i&gt;"phases" &lt;/i&gt;. &lt;br&gt;La première phase a été établie en 1986. Une nouvelle phase suit chaque session de la Conférence des Parties.  </value>
+  </data>
+  <data name="AddReview_List_3" xml:space="preserve">
+    <value>Etape| L’étape actuelle du processus en 22 étapes (a-v) de l’étude du commerce important tel que défini dans &lt;b&gt;la Résolution Conf. 12.8 (Rev. CoP13).&lt;/b&gt;</value>
+  </data>
+  <data name="AddReview_List_4" xml:space="preserve">
+    <value>Délai | Le délai de chaque étape peut être déterminé par &lt;b&gt;la Résolution Conf. 12.8 (Rev. CoP13) ou &lt;/b&gt;par les dates de réunion du Comité pour les animaux et du Comité pour les plantes, ou peut être établi par le Comité pour les animaux ou du Comité pour les plantes, par exemple, lorsqu’il a été demandé à un État de l’aire de répartition de répondre à des recommandations spécifiques du Comité pour les animaux ou du Comité pour les plantes. </value>
+  </data>
+  <data name="Meetings_Create_1" xml:space="preserve">
+    <value>Code de session | Le code de session est 'AC' pour 'Comité pour les animaux', 'PC' pour 'Comité pour les plantes' et 'SC' pour Comité permanent, suivi du numéro de la session. Par exemple, la 24e session du Comité pour les animaux est annotée &lt;b&gt;AC24.&lt;/b&gt;</value>
+  </data>
+  <data name="Meetings_Create_2" xml:space="preserve">
+    <value>Date de la session| La date de début de session.</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_1" xml:space="preserve">
+    <value>Date | Ajoutez la date de début de session ou la date de l’activité intersessions.</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_2" xml:space="preserve">
+    <value>Acteurs| Sélectionnez l’acteur pertinent pour cette étape (a-v)</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_3" xml:space="preserve">
+    <value>Envoyer vos observations | Soumettez d’éventuelles observations pertinentes sur l’étude.</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_4" xml:space="preserve">
+    <value>Nom du document | Nommez les fichiers en utilisant le protocole suivant : Genre_espèce_code pays ISO à deux lettres.doc. Par exemple,:  Prunus_africana_KE.  Il est préférable d’utiliser les underscores (tirets bas) que les espaces ; évitez les caractères autres que les lettres de l’alphabet.    </value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_5" xml:space="preserve">
+    <value>Ajouter le lien hypertexte|Si un document est déplacé sur un site web, ce lien sera brisé.  &lt;br&gt;&lt;br&gt;Il est préférable, si possible, de télécharger les documents.</value>
+  </data>
+  <data name="ProcessReview_Details_1" xml:space="preserve">
+    <value>Action | Action requise à chaque étape de l’étude du commerce important.</value>
+  </data>
+  <data name="ProcessReview_Details_10GH" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt;Compilation des informations et classement préliminaire &lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;g)&lt;/b&gt;si les espèces ne sont pas éliminées par l’étude conformément au paragraphe f), le Secrétariat procède à la compilation d’informations sur elles &lt;br&gt;&lt;br&gt;&lt;b&gt;h)&lt;/b&gt; lorsque c’est nécessaire, des consultants sont engagés par le Secrétariat pour compiler les informations sur la biologie, la gestion et le commerce des espèces et prennent contact avec les Etats des aires de répartition ou les spécialistes pertinents afin d'obtenir des informations qui seront incluses dans la compilation.</value>
+  </data>
+  <data name="ProcessReview_Details_11I" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt;Compilation des informations et classement préliminaire &lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;i)&lt;/b&gt; le Secrétariat ou les consultants, comme approprié, résument leurs conclusions sur les effets du commerce international sur les espèces sélectionnées, la base sur laquelle ils se sont fondés pour parvenir à ces conclusions, et les problèmes d'application de l'Article IV, et répartissent provisoirement les espèces sélectionnées en trois catégories: &lt;br&gt;&lt;br&gt;&lt;b&gt;i)&lt;i&gt; ‘espèces dont il faut se préoccuper en urgence’ &lt;/b&gt;&lt;/i&gt; espèces pour lesquelles les informations disponibles indiquent que les dispositions de l’Article IV, paragraphe 2 (a), 3 ou 6 (a), ne sont pas appliquées;&lt;br&gt;&lt;b&gt;ii) &lt;i&gt;‘espèces peut-être préoccupantes’ &lt;/b&gt;&lt;/i&gt; espèces pour lesquelles il n'est pas clair que ces dispositions soient appliquées; et &lt;br&gt;&lt;b&gt;iii) &lt;i&gt;‘espèces moins préoccupantes &lt;/i&gt; espèces pour lesquelles il apparaît que les informations disponibles indiquent que ces dispositions sont en train d'être appliquées. </value>
+  </data>
+  <data name="ProcessReview_Details_12J" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Compilation des informations et classement préliminaire &lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;j)&lt;/b&gt; avant que le rapport du Secrétariat ou des consultants soit examiné par le Comité pour les animaux ou le Comité pour les plantes, le Secrétariat l'envoie aux Etats des aires de répartition pertinents en leur demandant leurs commentaires et, s'il y a lieu, des informations complémentaires. Ces Etats ont 60 jours pour répondre.</value>
+  </data>
+  <data name="ProcessReview_Details_13K" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Examen des informations et confirmation de la catégorie par le Comité pour les animaux ou le Comité pour les plantes &lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;k)&lt;/b&gt; le Comité pour les animaux ou le Comité pour les plantes examine le rapport du Secrétariat ou des consultants et les réponses des Parties concernées, et, s'il y a lieu, change la catégorie préliminaire proposée.</value>
+  </data>
+  <data name="ProcessReview_Details_14L" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Examen des informations et confirmation de la catégorie par le Comité pour les animaux ou le Comité pour les plantes &lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;l)&lt;/b&gt; les espèces moins préoccupantes sont éliminées de l'étude. Les problèmes décelés au cours de l'étude qui ne sont pas liés à l'application de l’Article IV, paragraphe 2 (a), 3 ou 6 (a), sont traités par le Secrétariat conformément aux autres dispositions de la Convention et des résolutions pertinentes.</value>
+  </data>
+  <data name="ProcessReview_Details_15MN" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Formulation de recommandations et leur transmission aux Etats des aires de répartition &lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;m)&lt;/b&gt;le Comité pour les animaux ou le Comité pour les plantes, en consultation avec le Secrétariat, formule des recommandations sur les espèces restantes. Ces recommandations sont adressées aux Etats des aires de répartition concernés. &lt;br&gt;&lt;br&gt;&lt;b&gt;n) &lt;/b&gt;pour les espèces dont il faut se préoccuper en urgence, ces recommandations devraient proposer des mesures spécifiques pour traiter les problèmes d'application de l'Article IV, paragraphe 2 a), 3 ou 6 a). Ces recommandations devraient différencier les mesures à court terme et celles à long terme, et peuvent inclure, par exemple:&lt;br&gt;&lt;br&gt;&lt;b&gt;i)&lt;/b&gt; l'établissement d'une procédure administrative, de quotas d'exportation prudents ou d'une restriction temporaire des exportations des espèces concernées;&lt;br&gt;&lt;b&gt;ii)&lt;/b&gt; l'application d'une procédure de gestion adaptative pour veiller à ce que les nouvelles décisions sur le prélèvement et la gestion des espèces concernées soient fondées sur la surveillance continue des effets des prélèvements précédents et sur d'autres facteurs; ou &lt;br&gt;&lt;b&gt;iii) &lt;/b&gt;la conduite d’évaluation de la situation par taxon et par pays, des études de terrain ou l’évaluation des menaces aux populations ou d’autres facteurs pertinents pour fournir à l’autorité scientifique la base de l’avis de commerce non préjudiciable requis par les dispositions de l’Article IV, paragraphe 2 (a) ou 6 (a). &lt;br&gt;&lt;br&gt; Le Comité pour les animaux ou le Comité pour les plantes devrait fixer les délais pour l’application de ces recommandations. Ces délais doivent être fixes en fonction de la nature de l’action à entreprendre et être normalement inférieurs à 90 jours, mais pas supérieurs à deux ans après la date de transmission à l’Etat concerné.</value>
+  </data>
+  <data name="ProcessReview_Details_16P" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Formulation de recommandations et leur transmission aux Etats des aires de répartition&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;p)&lt;/b&gt; ces recommandations sont adressées par le Secrétariat aux Etats des aires de répartition concernés.</value>
+  </data>
+  <data name="ProcessReview_Details_17Q" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;q)&lt;/b&gt; le Secrétariat détermine, en consultation avec le président du Comité pour les animaux ou le président du Comité pour les plantes, si les recommandations ci-dessus ont été appliquées et fait rapport à cet égard au Comité permanent.</value>
+  </data>
+  <data name="ProcessReview_Details_18Q" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;r)&lt;/b&gt; si les recommandations ont été appliquées, le Secrétariat, après consultation du président du Comité permanent, notifie aux Parties que l'espèce est éliminée du processus.</value>
+  </data>
+  <data name="ProcessReview_Details_19R" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;r)&lt;/b&gt; si les recommandations ont été appliquées, le Secrétariat, après consultation du président du Comité permanent, notifie aux Parties que l'espèce est éliminée du processus.</value>
+  </data>
+  <data name="ProcessReview_Details_2" xml:space="preserve">
+    <value>Étape | L’étape actuelle du processus en 22 étapes (a-v) de l’étude du commerce important tel que défini dans la &lt;b&gt;Résolution Conf. 12.8 (Rev. CoP13) &lt;/b&gt;est mise en surbrillance.</value>
+  </data>
+  <data name="ProcessReview_Details_20R" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;r)&lt;/b&gt; si les recommandations ont été appliquées, le Secrétariat, après consultation du président du Comité permanent, notifie aux Parties que l'espèce est éliminée du processus.</value>
+  </data>
+  <data name="ProcessReview_Details_21S" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;s)&lt;/b&gt; si le Secrétariat, après consultation du président du Comité pour les animaux ou du président du Comité pour les plantes, estime qu'un Etat de l'aire de répartition n'a pas appliqué les recommandations du Comité pour les animaux ou du Comité pour les plantes conformément au paragraphe n) ou o), il devrait recommander au Comité permanent les mesures appropriées, qui peuvent inclure, en dernier ressort, une suspension de commerce de l'espèce concernée avec cet Etat. Sur la base du rapport du Secrétariat, le Comité permanent décide des mesures appropriées et fait des recommandations à l'Etat concerné, ou à toutes les Parties.</value>
+  </data>
+  <data name="ProcessReview_Details_22S" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;s)&lt;/b&gt; si le Secrétariat, après consultation du président du Comité pour les animaux ou du président du Comité pour les plantes, estime qu'un Etat de l'aire de répartition n'a pas appliqué les recommandations du Comité pour les animaux ou du Comité pour les plantes conformément au paragraphe n) ou o), il devrait recommander au Comité permanent les mesures appropriées, qui peuvent inclure, en dernier ressort, une suspension de commerce de l'espèce concernée avec cet Etat. Sur la base du rapport du Secrétariat, le Comité permanent décide des mesures appropriées et fait des recommandations à l'Etat concerné, ou à toutes les Parties.</value>
+  </data>
+  <data name="ProcessReview_Details_23T" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;t)&lt;/b&gt; le Secrétariat notifie aux Parties les recommandations ou mesures prises par le Comité permanent.</value>
+  </data>
+  <data name="ProcessReview_Details_24T" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;t)&lt;/b&gt; le Secrétariat notifie aux Parties les recommandations ou mesures prises par le Comité permanent.</value>
+  </data>
+  <data name="ProcessReview_Details_25U" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;u)&lt;/b&gt; une recommandation de suspension du commerce d'une espèce avec l'Etat concerné ne devrait être levée que quand cet Etat a prouvé à la satisfaction du Comité permanent, par l'intermédiaire du Secrétariat, qu'il applique l’Article IV, paragraphe 2 (a), 3 ou 6 (a).</value>
+  </data>
+  <data name="ProcessReview_Details_26U" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;u)&lt;/b&gt; une recommandation de suspension du commerce d'une espèce avec l'Etat concerné ne devrait être levée que quand cet Etat a prouvé à la satisfaction du Comité permanent, par l'intermédiaire du Secrétariat, qu'il applique l’Article IV, paragraphe 2 (a), 3 ou 6 (a).</value>
+  </data>
+  <data name="ProcessReview_Details_27V" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;v)&lt;/b&gt; le Comité permanent, en consultation avec le Secrétariat et le Président du Comité pour les animaux ou du Comité pour les plantes, examine les recommandations de suspension de commerce en place depuis plus de deux ans et, s'il y a lieu, prend des mesures pour traiter la situation.</value>
+  </data>
+  <data name="ProcessReview_Details_28V" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;v)&lt;/b&gt; le Comité permanent, en consultation avec le Secrétariat et le Président du Comité pour les animaux ou du Comité pour les plantes, examine les recommandations de suspension de commerce en place depuis plus de deux ans et, s'il y a lieu, prend des mesures pour traiter la situation.</value>
+  </data>
+  <data name="ProcessReview_Details_29V" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt; Mesures à prendre concernant l’application des recommandations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;v)&lt;/b&gt; le Comité permanent, en consultation avec le Secrétariat et le Président du Comité pour les animaux ou du Comité pour les plantes, examine les recommandations de suspension de commerce en place depuis plus de deux ans et, s'il y a lieu, prend des mesures pour traiter la situation.</value>
+  </data>
+  <data name="ProcessReview_Details_3" xml:space="preserve">
+    <value>Etat| Il est possible de consulter les étapes précédentes du processus à l’aide de &lt;i&gt;Afficher l’historique.&lt;/i&gt; L’étape actuelle est mise en surbrillance et est&lt;i&gt;en cours &lt;/i&gt;. L’étape en cours peut être modifiée en utilisant la fonction Process.&lt;br&gt;&lt;br&gt; Une fois que chaque étape est terminée, des précisions s’affichent sur le site web et la combinaison espèces/pays progresse vers l’étape suivante (sinon, vous verrez s’afficher &lt;i&gt;Pas encore applicable.&lt;/i&gt; </value>
+  </data>
+  <data name="ProcessReview_Details_4" xml:space="preserve">
+    <value>Etat| Les détails des étapes précédentes peuvent être consultés à l’aide de &lt;i&gt;Afficher l’historique.&lt;/i&gt; L’étape en cours peut être modifiée en utilisant la fonction Process.</value>
+  </data>
+  <data name="ProcessReview_Details_5AtoC" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt;Sélection des espèces à examiner&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;a)&lt;/b&gt; le Secrétariat demande au PNUE-Centre de surveillance continue de la conservation mondiale de la nature de produire, dans les 90 jours après chaque session de la Conférence des Parties, un résumé des statistiques des rapports annuels fondé sur la base de données  CITES, indiquant le niveau net des exportations enregistrées des espèces inscrites à l'Annexe II pour les cinq dernières années ; &lt;br&gt;&lt;br&gt;&lt;b&gt;b) &lt;/b&gt; sur la base des niveaux de commerce enregistrés et des informations dont disposent le Comité pour les animaux ou le Comité pour les plantes, le Secrétariat, les Parties ou d'autres spécialistes pertinents, les espèces dont il faut se préoccuper en priorité sont sélectionnées pour étude par le Comité pour les animaux ou le Comité pour les plantes (qu'elles aient ou non fait l'objet d'une précédente étude) ;&lt;br&gt;&lt;br&gt;&lt;b&gt;c) &lt;/b&gt;dans les cas exceptionnels où de nouvelles informations suscitent une préoccupation urgente, le Comité pour les animaux ou le Comité pour les plantes peut ajouter, à un autre stade, des espèces à la liste des espèces préoccupantes;</value>
+  </data>
+  <data name="ProcessReview_Details_6D" xml:space="preserve">
+    <value> Détails de l’étape | &lt;b&gt;&lt;i&gt;Consultation avec les États des aires de répartition concernant l'application de l'Article IV&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;d) &lt;/b&gt;le Secrétariat, dans les 30 jours suivant la session du Comité pour les animaux ou du Comité pour les plantes au cours de laquelle des espèces sont sélectionnées, notifie ces espèces aux Etats des aires de répartition en leur expliquant les raisons de la sélection et en leur demandant leurs commentaires sur les problèmes d'application de l'Article IV éventuellement décelés par le Comité. </value>
+  </data>
+  <data name="ProcessReview_Details_7D" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt;Sélection des espèces à examiner&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;Les Etats des aires de répartition ont 60 jours pour répondre.</value>
+  </data>
+  <data name="ProcessReview_Details_8E" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt;Sélection des espèces à examiner&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;e)&lt;/b&gt;le Secrétariat fait rapport au Comité pour les animaux ou du Comité pour les plantes on sur la réponse des Etats des aires de répartition concernés et sur toute autre information pertinente</value>
+  </data>
+  <data name="ProcessReview_Details_9F" xml:space="preserve">
+    <value>Détails de l’étape | &lt;b&gt;&lt;i&gt;Sélection des espèces à examiner&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;f)&lt;/b&gt;quand le Comité pour les animaux ou du Comité pour les plantes, ayant examiné les informations disponibles, estime que le paragraphe 2 (a), 3 ou 6 (a) de l’Article IV,, est correctement appliqué, les espèces sont éliminées de l'étude pour l'État concerné. Dans ce cas, le Secrétariat le notifie aux Parties dans les 60 jours</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_1" xml:space="preserve">
+    <value>Ajoutez un lien hypertexte|Si un document est déplacé sur un site web change, ce lien sera brisé.  &lt;br&gt;&lt;br&gt;Il est préférable, si possible, de télécharger les documents.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_11" xml:space="preserve">
+    <value>Résultat| Sélectionnez un résultat. Les derniers résultats peuvent être ajoutés par les administrateurs en utilisant l’admin. de site &gt;Décision&gt; Ajoutez résultats </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_12" xml:space="preserve">
+    <value>Notes | Donnez des détails sur les exceptions à la suspension du commerce, tels que : "la suspension ne s’applique pas aux spécimens produits par des établissements d’élevages en ranch/en captivité." Ajoutez toute autre note pertinente relative aux suspensions de commerce ou à la levée de suspensions de commerce. </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_14" xml:space="preserve">
+    <value>Suspensions de commerce | Sélectionnez le type de suspension. Il y a deux possibilités: soit "tout commerce " est suspendu soit il y a "des exceptions" à la suspension du commerce. Veuillez donner des précisions sur les exceptions dans la section Remarques.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_18" xml:space="preserve">
+    <value>Documents | Il peut s’agir de documents du Comité permanent documents expliquant pourquoi une suspension de commerce a été mise en œuvre ou levée, ou la correspondance des Etats de l’aire de répartition. &lt;br&gt;&lt;br&gt;L’ajout de nouveaux documents sera notifié au Secrétariat.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_19" xml:space="preserve">
+    <value>Terminé| Cochez la case si l’étape du processus (a-v) a été achevée. L’état affiché passera à la prochaine étape du processus.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_2" xml:space="preserve">
+    <value>Observations | Ajoutez une observation pour décrire les documents téléchargés ou pointés par un lien hypertexte. </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_3" xml:space="preserve">
+    <value>Documents | Un document peut comprendre une correspondance entre l’Etat de l’aire de répartition et le Secrétariat.  &lt;br&gt;&lt;br&gt;L’ajout de nouveaux documents sera notifié au Secrétariat.   </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_4" xml:space="preserve">
+    <value>Nom du document | Nommez les fichiers en utilisant le protocole suivant : Genre_espèce_code pays ISO à deux lettres.doc. Par exemple,:  Prunus_africana_KE.  Il est préférable d’utiliser les underscores (tirets bas) que les espaces ; évitez les caractères autres que les lettres de l’alphabet.    </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_5" xml:space="preserve">
+    <value>Droits d’accès | La consultation du document est limitée par des droits d’accès. </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_6" xml:space="preserve">
+    <value>Recommandation | Chaque recommandation adressée à l’Etat de l’aire de répartition sera ajoutée individuellement et en totalité, par ex. &lt;i&gt;"Faire une étude scientifiquement fondée pour établir l’état des populations de l’espèce dans le pays ". &lt;/i&gt;Chaque recommandation sera assortie d’un calendrier de mise en œuvre.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_7" xml:space="preserve">
+    <value>Date de la recommandation | Ajoutez la date de clôture de la session du Comité à laquelle la recommandation a été formulée. </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_8" xml:space="preserve">
+    <value>Comité| Sélectionnez la session à laquelle la recommandation a été formulée. Les administrateurs peuvent ajouter de nouvelles sessions en utilisant l’Admin. de site &gt; sessions &gt; Nouvelle session.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_9" xml:space="preserve">
+    <value>Calendrier| Ajoutez le calendrier de mise en œuvre de la recommandation tel qu’il a été fixé par le Comité pour les animaux ou le Comité pour les plantes.</value>
+  </data>
+  <data name="SearchByCountry" xml:space="preserve">
+    <value>Recherche par pays | Seuls les pays qui font ou ont fait l’objet de l’étude du commerce important sont inclus.</value>
+  </data>
+  <data name="SearchFreeSearch" xml:space="preserve">
+    <value>Introduire le nom d’une espèce | Vous pouvez introduire le genre seulement (par ex. &lt;i&gt;Agapornis&lt;/i&gt;), ou une combinaison de noms génériques et spécifiques, séparés par un signe plus (par ex. &lt;i&gt;Agapornis&lt;/i&gt; + &lt;i&gt;fischeri&lt;/i&gt;) &lt;br&gt; Veuillez noter que &lt;b&gt;les caractères génériques&lt;/b&gt; sont acceptés avec le caractère "*" (par ex. "Aga* + *eri").&lt;br&gt;L’outil de recherche n’est pas sensible à la casse.</value>
+  </data>
+  <data name="SelectGenus" xml:space="preserve">
+    <value>Sélectionner un genre | Seuls les genres qui font ou ont fait l’objet de l’étude du commerce important sont inclus.</value>
+  </data>
+  <data name="SelectPhase" xml:space="preserve">
+    <value>Sélectionner une phase | Le processus de sélection pour ajouter de nouvelles espèces à l’étude du commerce important a lieu périodiquement par étapes.&lt;br&gt;  Une nouvelle étape suit chaque session de la Conférence des Parties.</value>
+  </data>
+</root>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Note: Add entries to the App.config file for configuration settings
+    that apply only to the Test project.
+-->
+<configuration>
+  <configSections>
+    <section name="SubSonicService" type="SubSonic.SubSonicSection, SubSonic" requirePermission="false" />
+  </configSections>
+  <appSettings>
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <connectionStrings>
+    <!--<add name="SignificantTradeSS" connectionString="Data Source=WCMC-8C738B8E2A\SQLLOCAL2008;Initial Catalog=SigTradeTest;Persist Security Info=True;User ID=ackbarj;Password=ackbarj" providerName="System.Data.SqlClient"/>-->
+    <add name="NHibernateTestConnectionString" connectionString="Data Source=SODIUM\SODIUM08;Initial Catalog=NHibernateTest;Integrated Security=True" providerName="System.Data.SqlClient" />
+    <add name="SignificantTradeSS" connectionString="Data Source=SODIUM\SODIUM08;Initial Catalog=SigTradeTest2;Persist Security Info=True;User ID=sigtrade2;Password=s1gtrade2" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <!-- Subsonic provider -->
+  <SubSonicService defaultProvider="SignificantTradeSS">
+    <providers>
+      <clear />
+      <add name="SignificantTradeSS" type="SubSonic.SqlDataProvider, SubSonic" connectionStringName="SignificantTradeSS" generatedNamespace="SignificantTradeSS" />
+      <add add="" name="SSRepository" type="SubSonic.SqlDataProvider, SubSonic" connectionStringName="SignificantTradeSS" generatedNamespace="SignificantTradeSSRepository" tableBaseClass="RepositoryRecord" />
+    </providers>
+  </SubSonicService>
+  <!-- End of Subsonic Provider-->
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>

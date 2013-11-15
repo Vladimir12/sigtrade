@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/SigTrade2/!svn/ver/751/trunk/SigTrade/Views/Account
+END
+Edit.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/SigTrade2/!svn/ver/524/trunk/SigTrade/Views/Account/Edit.aspx
+END
+index.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/SigTrade2/!svn/ver/524/trunk/SigTrade/Views/Account/index.aspx
+END
+ChangePassword.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/SigTrade2/!svn/ver/532/trunk/SigTrade/Views/Account/ChangePassword.aspx
+END
+LogOn.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/SigTrade2/!svn/ver/597/trunk/SigTrade/Views/Account/LogOn.aspx
+END
+ResetPasswordSuccess.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/SigTrade2/!svn/ver/553/trunk/SigTrade/Views/Account/ResetPasswordSuccess.aspx
+END
+show.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/SigTrade2/!svn/ver/524/trunk/SigTrade/Views/Account/show.aspx
+END
+ChangePasswordSuccess.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/SigTrade2/!svn/ver/532/trunk/SigTrade/Views/Account/ChangePasswordSuccess.aspx
+END
+account_form.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/SigTrade2/!svn/ver/751/trunk/SigTrade/Views/Account/account_form.ascx
+END
+ForgotPassword.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/SigTrade2/!svn/ver/553/trunk/SigTrade/Views/Account/ForgotPassword.aspx
+END
+Register.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/SigTrade2/!svn/ver/524/trunk/SigTrade/Views/Account/Register.aspx
+END

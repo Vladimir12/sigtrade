@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessRightsAdmin" xml:space="preserve">
+    <value>Derechos de acceso|Control total de los datos y los derechos de los usuarios</value>
+  </data>
+  <data name="AccessRightsDataContributor" xml:space="preserve">
+    <value>Derechos de acceso|Poder proporcionar respuestas a la Secretaría</value>
+  </data>
+  <data name="AccessRightsDataManager" xml:space="preserve">
+    <value>Derechos de acceso|Derechos de datos para etapas  aprobadas</value>
+  </data>
+  <data name="AccessRightsFullViewer" xml:space="preserve">
+    <value>Derechos de acceso|Poder ver toda la información</value>
+  </data>
+  <data name="AccessRightsIntermediateViewer" xml:space="preserve">
+    <value>Derechos de acceso|Poder ver cierta información</value>
+  </data>
+  <data name="AccessRightsPublicViewer" xml:space="preserve">
+    <value>Derechos de acceso|Poder ver cierta información</value>
+  </data>
+  <data name="Account_LogOn" xml:space="preserve">
+    <value>|El acceso a ciertas zonas del sitio web está limitado a los administradores y encargados de los datos.</value>
+  </data>
+  <data name="AddReview_AddReview_1" xml:space="preserve">
+    <value>Seleccionar una fase | Seleccionar una nueva fase. Los administradores pueden añadir nuevas fases utilizando Sitio Admin. &gt; Fases &gt; Nueva fase</value>
+  </data>
+  <data name="AddReview_AddReview_2" xml:space="preserve">
+    <value>Seleccionar un Reino|Seleccionar un Reino ('fauna' o 'flora')</value>
+  </data>
+  <data name="AddReview_AddReview_3" xml:space="preserve">
+    <value>Seleccionar un género | Una vez seleccionado un género, las especies de ese género se incluirán en la casilla de especies para su selección.</value>
+  </data>
+  <data name="AddReview_AddReview_4" xml:space="preserve">
+    <value>Seleccionar un país | Solo pueden añadirse Estados del área de distribución conocidos de la especie. Si se selecciona un país para su examen, pero no figura en la lista, póngase en contacto con el administrador.</value>
+  </data>
+  <data name="AddReview_List_1" xml:space="preserve">
+    <value>Nivel de preocupación | La categoría del &lt;i&gt;"nivel de preocupación" &lt;/i&gt;puede ser determinada por el Comité de Fauna o de Flora a tenor de un examen de la biología, la gestión y los niveles de comercio internacional de la especie,  por la Secretaría o los consultores y tomando en consideración las respuestas de los Estados del área de distribución. &lt;br&gt;&lt;br&gt;Hay tres categorías de preocupación: &lt;br&gt;&lt;b&gt;Especies de urgente preocupación &lt;/b&gt; incluye las especies para las que la información disponible pone de relieve que no se aplican las disposiciones del párrafo 2(a), 3 ó 6(a) del Artículo IV &lt;br&gt; &lt;b&gt;Especies de posible preocupación&lt;/b&gt; incluye las especies para las que no está claro si se cumplen esas disposiciones &lt;br&gt; &lt;b&gt;Especies de menor preocupación &lt;/b&gt; incluye las especies para las que de la información disponible se desprende que se cumplen esas disposiciones.</value>
+  </data>
+  <data name="AddReview_List_2" xml:space="preserve">
+    <value>Fase | El proceso de selección para añadir nuevas especies para su examen se lleva a cabo periódicamente en &lt;i&gt;"fases" &lt;/i&gt;. &lt;br&gt;La primera fase se estableció en 1986. Actualmente se inicia una nueva fase después de cada reunión de la Conferencia de las Partes.  </value>
+  </data>
+  <data name="AddReview_List_3" xml:space="preserve">
+    <value>Etapa | La etapa actual del proceso de 22 etapas (a-v) del examen del comercio significativo como se define en la &lt;b&gt;Resolución Conf. 12.8 (Rev. CoP13).&lt;/b&gt;</value>
+  </data>
+  <data name="AddReview_List_4" xml:space="preserve">
+    <value>Fecha límite | Las fechas límite para cada etapa pueden determinarse por la &lt;b&gt;Resolución Conf. 12.8 (Rev. CoP13) o &lt;/b&gt; por las fechas de las reuniones de los Comités de Fauna y de Flora pueden, o pueden ser establecidas por el Comité de Fauna o de Flora, cuando por ejemplo, se requiere que un Estado del área de distribución responda a determinadas recomendaciones del AC/PC. </value>
+  </data>
+  <data name="Meetings_Create_1" xml:space="preserve">
+    <value>Código de reunión | El código de la reunión es "AC" para el Comité de Fauna, "PC" para el Comité de Flora y "SC" para el Comité Permanente, seguido del número de la reunión. Por ejemplo, la 24ª reunión del Comité de Fauna se representa como &lt;b&gt;AC24.&lt;/b&gt;</value>
+  </data>
+  <data name="Meetings_Create_2" xml:space="preserve">
+    <value>Fecha de la reunión | La fecha de inicio de la reunión.</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_1" xml:space="preserve">
+    <value>Fecha | Añadir la fecha de inicio de la reunión o la fecha de una actividad entre reuniones.</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_2" xml:space="preserve">
+    <value>Responsables| Seleccionar los responsables de la etapa (a-v)</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_3" xml:space="preserve">
+    <value>Añadir observaciones | Añadir cualquier observación relevante sobre el examen.</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_4" xml:space="preserve">
+    <value>Nombre del documento | En los nombres de los ficheros se utiliza el siguiente protocolo: Género_especie_código ISO del país de dos letras.doc. Por ejemplo:  Prunus_africana_KE.  Utilizar subrayados en vez de espacios, y evitar utilizar caracteres que no son letras del alfabeto.    </value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_5" xml:space="preserve">
+    <value>Añadir un hiperenlace|Si se cambia la ubicación de un documento en un sitio web, este enlace se romperá.  &lt;br&gt;&lt;br&gt;Es preferible telecargar los documentos, si posible.</value>
+  </data>
+  <data name="ProcessReview_Details_1" xml:space="preserve">
+    <value>Medida | La medida requerida en cada etapa del examen del comercio significativo.</value>
+  </data>
+  <data name="ProcessReview_Details_10GH" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt;Compilación de información y categorización preliminar&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;g)&lt;/b&gt;en el caso de que la especie no se elimine del examen de conformidad con el párrafo f), la Secretaría procederá a compilar información sobre la especie &lt;br&gt;&lt;br&gt;&lt;b&gt;h)&lt;/b&gt;, en caso necesario, la Secretaría contratará consultores para compilar información sobre la biología, la gestión y el comercio de la especies y se pondrá en contacto con los Estados del área de distribución o los expertos pertinentes a fin de que obtengan información para incluirla en la compilación.</value>
+  </data>
+  <data name="ProcessReview_Details_11I" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt;Compilación de información y categorización preliminar&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;i)&lt;/b&gt; La Secretaría o los consultores, según proceda, resumirán sus conclusiones sobre los efectos del comercio internacional sobre la especie seleccionada, las bases sobre las que se formulan esas conclusiones y los problemas relativos a la aplicación del Artículo IV, y dividirán provisionalmente las especies seleccionadas en tres categorías : &lt;br&gt;&lt;br&gt;&lt;b&gt;i)&lt;i&gt; "Especies de urgente preocupación"&lt;/b&gt;&lt;/i&gt; incluye las especies para las que la información disponible pone de relieve que no se aplican las disposiciones del párrafo 2(a), 3 ó 6(a) del Artículo IV;&lt;br&gt;&lt;b&gt;ii) &lt;i&gt;"Especies de posible preocupación" &lt;/b&gt;&lt;/i&gt;incluye las especies para las que no está claro si se cumplen esas disposiciones ; y&lt;br&gt;&lt;b&gt;iii) &lt;i&gt;"Especies de menor preocupación&lt;/i&gt; incluye las especies para las que de la información disponible se desprende que se cumplen esas disposiciones</value>
+  </data>
+  <data name="ProcessReview_Details_12J" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt;Compilación de información y categorización preliminar&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;j)&lt;/b&gt; antes de que el Comité de Fauna o de Flora considere el informe de la Secretaría o del consultor, la Secretaría lo transmitirá a los Estados del área de distribución relevantes, solicitando comentarios y, en la medida de lo posible, información complementaria. Los Estados del área de distribución dispondrán de 60 días para responder</value>
+  </data>
+  <data name="ProcessReview_Details_13K" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Examen de la información y confirmación de la categorización por el Comité de Fauna o de Flora&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;k)&lt;/b&gt; el Comité de Fauna o de Flora examinará el informe de la Secretaría o de los consultores y las respuestas recibidas de los Estados concernidos y, según proceda, revisará la categorización preliminar propuesta</value>
+  </data>
+  <data name="ProcessReview_Details_14L" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Examen de la información y confirmación de la categorización por el Comité de Fauna o de Flora&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;l)&lt;/b&gt; las especies de menor preocupación se eliminarán del examen. La Secretaría abordará los problemas identificados en el curso del examen que no estén relacionados con la aplicación del párrafo  2 (a), 3 ó 6 (a) del Artículo IV, de conformidad con otras disposiciones de la Convención y las resoluciones relevantes</value>
+  </data>
+  <data name="ProcessReview_Details_15MN" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Formular recomendaciones y transmitirlas a los Estados del área de distribución&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;m)&lt;/b&gt; El Comité de Fauna o de Flora, en consulta con la Secretaría, formulará recomendaciones sobre las especies restantes. Esas recomendaciones se dirigirán a los Estados del área de distribución concernidos. &lt;br&gt;&lt;br&gt;&lt;b&gt;n) &lt;/b&gt;para las especies de urgente preocupación, en esas recomendaciones deberían proponerse medidas concretas para abordar los problemas relacionados con la aplicación del párrafo 2 (a), 3 ó 6 (a) del Artículo IV. En esas recomendaciones debería diferenciarse entre las medidas a corto plazo y a largo plazo, y pueden incluir, por ejemplo:&lt;br&gt;&lt;br&gt;&lt;b&gt;i)&lt;/b&gt; el establecimiento de procedimientos administrativos, cupos de exportación cautelares o restricciones temporales sobre las exportaciones de la especie concernida;&lt;br&gt;&lt;b&gt;ii)&lt;/b&gt; la aplicación de procedimientos de gestión adaptables para garantizar que las nuevas decisiones sobre la recolección y la gestión de la especie se basarán en la supervisión del impacto de la explotación anterior y de otros factores; or&lt;br&gt;&lt;b&gt;iii) &lt;/b&gt;la realización de evaluaciones sobre la situación específica del taxón y el país, estudios de campo o la evaluación de las amenazas para las poblaciones u otros factores relevantes para ofrecer la base para que las Autoridades Científicas formulen dictámenes de extracción no perjudicial, como se requiere en el párrafo 2 (a) ó 6 (a) del Artículo IV. &lt;br&gt;&lt;br&gt;El Comité de Fauna o de Flora debería determinar fechas límites para la aplicación de esas recomendaciones. Deben ser apropiadas para la índole de la medida que ha de emprenderse y no debería ser inferior a 90 días y no más de dos años después de la fecha de transmisión al Estado concernido.</value>
+  </data>
+  <data name="ProcessReview_Details_16P" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Formular recomendaciones y transmitirlas a los Estados del área de distribución&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;p)&lt;/b&gt; La Secretaría transmitirá esas recomendaciones a los Estados del área de distribución concernidos.</value>
+  </data>
+  <data name="ProcessReview_Details_17Q" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas que han de tomarse para aplicar las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;q)&lt;/b&gt; La Secretaría, en consulta con la Presidencia del Comité de Fauna o de Flora, determinará si se han aplicado las recomendaciones precitadas e informará al Comité Permanente en consecuencia.</value>
+  </data>
+  <data name="ProcessReview_Details_18Q" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt;Medidas que han de tomarse para aplicar las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;q)&lt;/b&gt; La Secretaría, en consulta con la Presidencia del Comité de Fauna o de Flora, determinará si se han aplicado las recomendaciones precitadas e informará al Comité Permanente en consecuencia.</value>
+  </data>
+  <data name="ProcessReview_Details_19R" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas que han de tomarse para aplicar las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;r)&lt;/b&gt; Si se han cumplido las recomendaciones, la Secretaría, en consulta con la Presidencia del Comité Permanente, notificará a las Partes que la especie se ha suprimido del proceso.</value>
+  </data>
+  <data name="ProcessReview_Details_2" xml:space="preserve">
+    <value>Etapa | Se subraya la etapa actual del proceso de 22 etapas (a-v) del examen del comercio significativo como se define en  &lt;b&gt;la Resolución Conf. 12.8 (Rev. CoP13) &lt;/b&gt;.</value>
+  </data>
+  <data name="ProcessReview_Details_20R" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas a adoptar en relación con la aplicación de las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;r)&lt;/b&gt; las recomendaciones se han cumplido, la Secretaría, en consulta con la Presidencia del Comité Permanente, notificará a las Partes que la especie se ha retirado del proceso.</value>
+  </data>
+  <data name="ProcessReview_Details_21S" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas a adoptar en relación con la aplicación de las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;s)&lt;/b&gt;cuando la Secretaría, tras haber consultado con la Presidencia del Comité de Fauna o de Flora, determine que un Estado del área de distribución no ha aplicado las recomendaciones formuladas por el Comité de Fauna o de Flora, de conformidad con el párrafo n) u o), debería recomendar al Comité Permanente las medidas apropiadas, que pueden incluir, en última instancia, una suspensión del comercio de la especie concernida con ese Estado. A tenor del informe de la Secretaría, el Comité Permanente decidirá las medidas apropiadas y formulará recomendaciones al Estado en cuestión, o a todas las Partes.</value>
+  </data>
+  <data name="ProcessReview_Details_22S" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas a adoptar en relación con la aplicación de las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;s)&lt;/b&gt;cuando la Secretaría, tras haber consultado con la Presidencia del Comité de Fauna o de Flora, determine que un Estado del área de distribución no ha aplicado las recomendaciones formuladas por el Comité de Fauna o de Flora, de conformidad con el párrafo n) u o), debería recomendar al Comité Permanente las medidas apropiadas, que pueden incluir, en última instancia, una suspensión del comercio de la especie concernida con ese Estado. A tenor del informe de la Secretaría, el Comité Permanente decidirá las medidas apropiadas y formulará recomendaciones al Estado en cuestión, o a todas las Partes.</value>
+  </data>
+  <data name="ProcessReview_Details_23T" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas a adoptar en relación con la aplicación de las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;t)&lt;/b&gt; la Secretaría notificará a las Partes las recomendaciones formuladas o las medidas adoptadas por el Comité Permanente.</value>
+  </data>
+  <data name="ProcessReview_Details_24T" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas a adoptar en relación con la aplicación de las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;t)&lt;/b&gt; la Secretaría notificará a las Partes las recomendaciones formuladas o las medidas adoptadas por el Comité Permanente.</value>
+  </data>
+  <data name="ProcessReview_Details_25U" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas a adoptar en relación con la aplicación de las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;u)&lt;/b&gt; una recomendación de suspender el comercio de la especie concernida con ese Estados solo debería retirarse si el Estado demuestra a la satisfacción del Comité Permanente, a través de la Secretaría, que cumple lo dispuesto en el párrafo 2 (a), 3 ó 6 (a) del Artículo IV.</value>
+  </data>
+  <data name="ProcessReview_Details_26U" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas a adoptar en relación con la aplicación de las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;u)&lt;/b&gt; una recomendación de suspender el comercio de la especie concernida con ese Estados solo debería retirarse si el Estado demuestra a la satisfacción del Comité Permanente, a través de la Secretaría, que cumple lo dispuesto en el párrafo 2 (a), 3 ó 6 (a) del Artículo IV.</value>
+  </data>
+  <data name="ProcessReview_Details_27V" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas a adoptar en relación con la aplicación de las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;v)&lt;/b&gt; el Comité Permanente, en consulta con la Secretaría y la Presidencia del Comité de Fauna o de Flora, examinará las recomendaciones de suspender el comercio que han estado en vigor durante más de dos años y, según proceda, tomará medidas para abordar la situación.</value>
+  </data>
+  <data name="ProcessReview_Details_28V" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas a adoptar en relación con la aplicación de las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;v)&lt;/b&gt; el Comité Permanente, en consulta con la Secretaría y la Presidencia del Comité de Fauna o de Flora, examinará las recomendaciones de suspender el comercio que han estado en vigor durante más de dos años y, según proceda, tomará medidas para abordar la situación.</value>
+  </data>
+  <data name="ProcessReview_Details_29V" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt; Medidas a adoptar en relación con la aplicación de las recomendaciones&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;v)&lt;/b&gt; el Comité Permanente, en consulta con la Secretaría y la Presidencia del Comité de Fauna o de Flora, examinará las recomendaciones de suspender el comercio que han estado en vigor durante más de dos años y, según proceda, tomará medidas para abordar la situación.</value>
+  </data>
+  <data name="ProcessReview_Details_3" xml:space="preserve">
+    <value>Situación | Los pormenores de etapas anteriores del proceso pueden verse utilizando &lt;i&gt;Véase historial.&lt;/i&gt; La etapa actual aparece subrayada y está &lt;i&gt;en curso&lt;/i&gt;. La etapa actual puede editarse utilizando Procesar.&lt;br&gt;&lt;br&gt; Una vez completada cada etapa, se publicarán datos en el sitio web y la combinación especie/país avanzará a la etapa siguiente (que se expondrá como&lt;i&gt;Aún no se aplica.&lt;/i&gt; </value>
+  </data>
+  <data name="ProcessReview_Details_4" xml:space="preserve">
+    <value>Situación | Los pormenores de etapas anteriores pueden verse utilizando &lt;i&gt;Véase historial.&lt;/i&gt; La etapa actual puede editarse utilizando Proceso.</value>
+  </data>
+  <data name="ProcessReview_Details_5AtoC" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt;Selección de especies para su examen&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;a)&lt;/b&gt; la Secretaría solicitará al Centro de Monitoreo de la Conservación Mundial del PNUMA que produzca, dentro de los 90 días después de cada reunión de la Conferencia de las Partes, un resumen de las estadísticas de los informes anuales de la base de datos CITES mostrando el nivel neto registrado de las exportaciones 1 para las especies del Apéndice II durante los cinco años más recientes; &lt;br&gt;&lt;br&gt;&lt;b&gt;b) &lt;/b&gt; sobre la base de los niveles registrados de comercio y la información disponible por el Comité de Fauna o de Flora, la Secretaría, las Partes u otros expertos relevantes, el Comité de Fauna o de Flora u otros expertos pertinentes seleccionarán para su examen las especies de preocupación prioritaria (independientemente de que esa especie haya estado sujeta a un examen anterior);&lt;br&gt;&lt;br&gt;&lt;b&gt;c) &lt;/b&gt;en casos excepcionales en los que la información más reciente indique una urgente preocupación, el Comité de Fauna o de Flora puede añadir una especie a la lista de especies de preocupación en otra etapa.</value>
+  </data>
+  <data name="ProcessReview_Details_6D" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt;Consultas con los Estados del área de distribución sobre la aplicación del Artículo IV&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;d) &lt;/b&gt;la Secretaría, en el plazo de 30 días después de una reunión del Comité de Fauna o de Flora en la que se seleccione la especie, notificará a los Estados del área de distribución de la especie seleccionada, explicando la selección y solicitando observaciones sobre los posibles problemas de aplicación del Artículo  IV identificados por el Comité.</value>
+  </data>
+  <data name="ProcessReview_Details_7D" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt;Selección de especies para su examen&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;los Estados del área de distribución dispondrán de 60 días para responder.</value>
+  </data>
+  <data name="ProcessReview_Details_8E" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt;Selección de especies para su examen&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;e)&lt;/b&gt; la Secretaría informará al Comité de Fauna o de Flora sobre las respuestas de los Estados del área de distribución concernidos, incluyendo cualquier otra información pertinente</value>
+  </data>
+  <data name="ProcessReview_Details_9F" xml:space="preserve">
+    <value>Pormenores de la etapa | &lt;b&gt;&lt;i&gt;Selección de especies para su examen&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;f)&lt;/b&gt;cuando el Comité de Fauna o de Flora, tras haber examinado la información disponible, determine que el párrafo 2 (a), 3 ó 6 (a) del Artículo IV se aplica correctamente, la especie se suprimirá el examen respecto del Estado concernido. En ese caso, la Secretaría notificará el hecho a las Partes en el plazo de 60 días</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_1" xml:space="preserve">
+    <value>Añadir hiperenlace|Si se cambia la ubicación de un documento en un sitio web, este enlace se romperá.  &lt;br&gt;&lt;br&gt;Es preferible telecargar los documentos, si posible.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_11" xml:space="preserve">
+    <value>Resultado | Seleccionar un resultado. Los administradores pueden añadir nuevos resultados utilizando el Sitio Admin. &gt; Decisiones &gt; Añadir resultados</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_12" xml:space="preserve">
+    <value>Notas | Proporcionar detalles sobre las excepciones a las suspensiones del comercio, que pueden incluir, por ejemplo: "la suspensión no se aplica a los especímenes de esta especie producidos en establecimientos de cría en granjas / cautividad." Añadir cualquier otra nota relevante sobre las suspensiones del comercio o el levantamiento de suspensiones al comercio. </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_14" xml:space="preserve">
+    <value>Suspensiones del comercio| Seleccionar el tipo de suspensión. Hay dos opciones: bien sea se suspende "Todo el comercio" o "Excepciones" a la suspensión del comercio. Proporcione pormenores de las excepciones en la sección Notas.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_18" xml:space="preserve">
+    <value>Documentos | Puede tratarse de documentos del Comité Permanente que explican los motivos por los que se ha impuesto o retirado una suspensión del comercio, o la correspondencia de Estados del área de distribución. &lt;br&gt;&lt;br&gt;Se notificará a la Secretaría cuando se añadan nuevos documentos.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_19" xml:space="preserve">
+    <value>Completado | Marque la casilla si se ha completado la etapa del proceso (a-v). En ese caso se procederá a la nueva etapa del proceso.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_2" xml:space="preserve">
+    <value>Observaciones | Añadir comentarios para describir los documentos telecargados o vinculados con un hiperenlace. </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_3" xml:space="preserve">
+    <value>Documentos | Un documento puede incluir correspondencia entre el Estado del área de distribución y la Secretaría. &lt;br&gt;&lt;br&gt;Se notificará a la Secretaría cuando se añadan nuevos documentos.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_4" xml:space="preserve">
+    <value>Nombre de los documentos | Para los nombres de los ficheros se utilizará el siguiente protocolo: Género_especie_código ISO de país de dos letras.doc. Por ejemplo:  Prunus_africana_KE.  Utilizar subrayados en vez de espacios, y evitar utilizar caracteres que no sean letras del alfabeto.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_5" xml:space="preserve">
+    <value>Derechos de acceso | La consulta de documentos está limitada por los derechos de acceso. </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_6" xml:space="preserve">
+    <value>Recomendación | Cada recomendación dirigida al Estado del área de distribución debería añadirse individualmente entera, p. ej. &lt;i&gt;"Desarrollar un reconocimiento basado en datos científicos para establecer el estado de la población de la especie en el país". &lt;/i&gt;Cada recomendación tendrá un calendario concreto para su aplicación.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_7" xml:space="preserve">
+    <value>Fecha de la recomendación | Añadir la fecha de conclusión de la reunión del Comité en que se formuló la recomendación. </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_8" xml:space="preserve">
+    <value>Comité | Seleccionar la reunión en la que se formuló la recomendación. Los administradores pueden añadir nuevas reuniones utilizando el Sitio Admin. &gt; Reuniones &gt; Nueva reunión.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_9" xml:space="preserve">
+    <value>Fecha límite | Añadir la fecha límite para la aplicación de la recomendación según lo determinado por el Comité de Fauna o de Flora.</value>
+  </data>
+  <data name="SearchByCountry" xml:space="preserve">
+    <value>Búsqueda por país | Solo se incluyen los países que son o han sido objeto de examen del comercio significativo.</value>
+  </data>
+  <data name="SearchFreeSearch" xml:space="preserve">
+    <value>Escribir el nombre de una especie | Solo puede escribirse un nombre de género (es decir &lt;i&gt;Agapornis&lt;/i&gt;), o una combinación de nombres genéricos y específicos separados por el signo + (p. ej. &lt;i&gt;Agapornis&lt;/i&gt; + &lt;i&gt;fischeri&lt;/i&gt;) &lt;br&gt; Tome nota de que &lt;b&gt;wildcards&lt;/b&gt; se aceptan con el signo "*" (p. ej. "Aga* + *eri").&lt;br&gt;El instrumento de búsqueda no es sensible a la casilla.</value>
+  </data>
+  <data name="SelectGenus" xml:space="preserve">
+    <value>Seleccionar un género | Solo se incluyen los géneros que son o han sido objeto de examen del comercio significativo.</value>
+  </data>
+  <data name="SelectPhase" xml:space="preserve">
+    <value>Seleccionar una fase | El proceso de selección para añadir una nueva especie al examen del comercio significativo se lleva a cabo periódicamente por fases.&lt;br&gt; Actualmente se inicia una nueva fase después de cada reunión de la Conferencia de las Partes.</value>
+  </data>
+</root>

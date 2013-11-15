@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/SigTrade2/!svn/ver/786/trunk/SigTrade/Models
+END
+Taxons.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SigTrade2/!svn/ver/235/trunk/SigTrade/Models/Taxons.cs
+END
+GenericRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/SigTrade2/!svn/ver/786/trunk/SigTrade/Models/GenericRepository.cs
+END
+MeetingLibRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/SigTrade2/!svn/ver/499/trunk/SigTrade/Models/MeetingLibRepository.cs
+END
+MeetingLibSP.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/SigTrade2/!svn/ver/2/trunk/SigTrade/Models/MeetingLibSP.cs
+END
+RecommendationsRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/SigTrade2/!svn/ver/386/trunk/SigTrade/Models/RecommendationsRepository.cs
+END
+TaxonRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/SigTrade2/!svn/ver/747/trunk/SigTrade/Models/TaxonRepository.cs
+END
+PALibExtra.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/SigTrade2/!svn/ver/106/trunk/SigTrade/Models/PALibExtra.cs
+END
+Profile.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/SigTrade2/!svn/ver/614/trunk/SigTrade/Models/Profile.cs
+END
+ReviewRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/SigTrade2/!svn/ver/784/trunk/SigTrade/Models/ReviewRepository.cs
+END
+DocumentsRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/SigTrade2/!svn/ver/657/trunk/SigTrade/Models/DocumentsRepository.cs
+END
+UpdateUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SigTrade2/!svn/ver/781/trunk/SigTrade/Models/UpdateUtils.cs
+END
+CountryRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/SigTrade2/!svn/ver/339/trunk/SigTrade/Models/CountryRepository.cs
+END
+ParagraphDocument.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/SigTrade2/!svn/ver/500/trunk/SigTrade/Models/ParagraphDocument.cs
+END
+ASpeciesTaxon.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SigTrade2/!svn/ver/2/trunk/SigTrade/Models/ASpeciesTaxon.cs
+END
+BasePage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/SigTrade2/!svn/ver/519/trunk/SigTrade/Models/BasePage.cs
+END
+ParagraphActionDetails.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/SigTrade2/!svn/ver/92/trunk/SigTrade/Models/ParagraphActionDetails.cs
+END
+CommitteeLibRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/SigTrade2/!svn/ver/288/trunk/SigTrade/Models/CommitteeLibRepository.cs
+END
+APhylum.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/SigTrade2/!svn/ver/2/trunk/SigTrade/Models/APhylum.cs
+END
+DecisionsRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/SigTrade2/!svn/ver/743/trunk/SigTrade/Models/DecisionsRepository.cs
+END
+MessageTemplateRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/SigTrade2/!svn/ver/439/trunk/SigTrade/Models/MessageTemplateRepository.cs
+END
+SelectItems.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/SigTrade2/!svn/ver/32/trunk/SigTrade/Models/SelectItems.cs
+END
+SPRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/SigTrade2/!svn/ver/655/trunk/SigTrade/Models/SPRepository.cs
+END
+CommentsRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/SigTrade2/!svn/ver/658/trunk/SigTrade/Models/CommentsRepository.cs
+END
+MessageLogRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/SigTrade2/!svn/ver/439/trunk/SigTrade/Models/MessageLogRepository.cs
+END
+ParagraphComment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/SigTrade2/!svn/ver/92/trunk/SigTrade/Models/ParagraphComment.cs
+END
+AGeneralTaxon.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SigTrade2/!svn/ver/2/trunk/SigTrade/Models/AGeneralTaxon.cs
+END
+MembershipRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/SigTrade2/!svn/ver/58/trunk/SigTrade/Models/MembershipRepository.cs
+END
+ReviewDesc.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/SigTrade2/!svn/ver/471/trunk/SigTrade/Models/ReviewDesc.cs
+END
+PhaseRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/SigTrade2/!svn/ver/468/trunk/SigTrade/Models/PhaseRepository.cs
+END
+SigtradeUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/SigTrade2/!svn/ver/711/trunk/SigTrade/Models/SigtradeUser.cs
+END
+DecisionDetails.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/SigTrade2/!svn/ver/418/trunk/SigTrade/Models/DecisionDetails.cs
+END

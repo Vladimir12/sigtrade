@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessRightsAdmin" xml:space="preserve">
+    <value>Access rights|Full control of data and user rights</value>
+  </data>
+  <data name="AccessRightsDataContributor" xml:space="preserve">
+    <value>Access rights|Able to provide responses to the Secretariat</value>
+  </data>
+  <data name="AccessRightsDataManager" xml:space="preserve">
+    <value>Access rights|Data rights for approved stages</value>
+  </data>
+  <data name="AccessRightsFullViewer" xml:space="preserve">
+    <value>Access rights|Able to view all information</value>
+  </data>
+  <data name="AccessRightsIntermediateViewer" xml:space="preserve">
+    <value>Access rights|Able to view certain information</value>
+  </data>
+  <data name="AccessRightsPublicViewer" xml:space="preserve">
+    <value>Access rights|Able to view certain information</value>
+  </data>
+  <data name="Account_LogOn" xml:space="preserve">
+    <value>|Access to certain areas of the website are restricted to administrators and data managers. </value>
+  </data>
+  <data name="AddReview_AddReview_1" xml:space="preserve">
+    <value>Select Phase| Select the new Phase. New Phases can be added by Administrators using the Site Admin &gt; Phases &gt; New Phase</value>
+  </data>
+  <data name="AddReview_AddReview_2" xml:space="preserve">
+    <value>Select Kingdom|Select Kingdom Plants or Kingdom Animals</value>
+  </data>
+  <data name="AddReview_AddReview_3" xml:space="preserve">
+    <value>Select Genus/Species|Select &lt;i&gt;genus.&lt;/i&gt; Once the genus is selected, species of that genus will be populated in the species box for selection.</value>
+  </data>
+  <data name="AddReview_AddReview_4" xml:space="preserve">
+    <value>Select Country| Only known range States of the species selected can be added. If a country is selected for review and it does not occur in the list, contact the administrator.</value>
+  </data>
+  <data name="AddReview_List_1" xml:space="preserve">
+    <value>Level of Concern|The &lt;i&gt;"level of concern" &lt;/i&gt;category is determined by the Animals or Plants Committee following a review of the species biology, management and international trade levels, by the Secretariat or consultants and considering responses by the range States. &lt;br&gt;&lt;br&gt;There are three categories of concern: &lt;br&gt;&lt;b&gt;Species of urgent concern &lt;/b&gt; includes species for which the available information indicates that the provisions of Article IV, paragraph 2(a), 3 or 6(a) are not being implemented &lt;br&gt; &lt;b&gt;Species of possible concern&lt;/b&gt; includes species for which it is not clear whether or not these provisions are being implemented &lt;br&gt; &lt;b&gt;Species of least concern &lt;/b&gt; includes species for which the available information appears to indicate that these provisions are being met </value>
+  </data>
+  <data name="AddReview_List_2" xml:space="preserve">
+    <value>Phase|The selection process for adding new species for review takes place periodically in &lt;i&gt;"Phases" &lt;/i&gt;. &lt;br&gt;The first Phase was established in 1986. A new Phase now follows every meeting of the Conference of the Parties.  </value>
+  </data>
+  <data name="AddReview_List_3" xml:space="preserve">
+    <value>Stage|The current stage of the 22 stage process (a-v) of the Review of Significant Trade as defined in &lt;b&gt;Conf. Res. 12.8 (Rev CoP13).&lt;/b&gt;</value>
+  </data>
+  <data name="AddReview_List_4" xml:space="preserve">
+    <value>Deadline|Deadlines for each stage may be determined by &lt;b&gt;Conf. Res. 12.8 (Rev. CoP13), &lt;/b&gt;by the meeting dates of the Animals and Plants Committee or they can be set by the Animals or Plants Committee, where for example, a range State is required to respond to specific recommendations of the AC/PC. </value>
+  </data>
+  <data name="Meetings_Create_1" xml:space="preserve">
+    <value>Meeting Code | The abbreviated meeting code, e.g. Animals Committee 24 is represented as &lt;b&gt;AC24.&lt;/b&gt;</value>
+  </data>
+  <data name="Meetings_Create_2" xml:space="preserve">
+    <value>Meeting Date | The start date of the meeting.</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_1" xml:space="preserve">
+    <value>Date | Add the start date of the meeting or date of intersessional activity.</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_2" xml:space="preserve">
+    <value>Actors | Select the actor relevant to the stage (a-v)</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_3" xml:space="preserve">
+    <value>Add comments | Add any relevant comments relating to the review.</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_4" xml:space="preserve">
+    <value>Document name | Name files using the following protocol: Genus_species_two letter ISOcountry code.doc. For example:  Prunus_africana_KE.  Use underscores rather than spaces,  and avoid using characters that are not letters of the alphabet.</value>
+  </data>
+  <data name="ParagraphDetails_Add_Review_5" xml:space="preserve">
+    <value> Hyperlinks | If the location of a document on a website changes, this link will be broken.  &lt;br&gt;&lt;br&gt;It is preferable to upload documents if possible.</value>
+  </data>
+  <data name="ProcessReview_Details_1" xml:space="preserve">
+    <value>Action|The action required within each stage of the Review of Significant Trade.</value>
+  </data>
+  <data name="ProcessReview_Details_10GH" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt;Compilation of information and preliminary categorization&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;g)&lt;/b&gt;in the event that the species is not eliminated from the review in accordance with paragraph f), the Secretariat shall proceed with the compilation of information regarding the species &lt;br&gt;&lt;br&gt;&lt;b&gt;h)&lt;/b&gt; when necessary, consultants shall be engaged by the Secretariat to compile information about the biology and management of and trade in the species and shall contact the range States or relevant experts to obtain information for inclusion in the compilation.</value>
+  </data>
+  <data name="ProcessReview_Details_11I" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt;Compilation of information and preliminary categorization&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;i)&lt;/b&gt; the Secretariat or consultants, as appropriate, shall summarize their conclusions about the effects of international trade on the selected species, the basis on which such conclusions are made and problems concerning the implementation of Article IV, and shall provisionally divide the selected species into three categories: &lt;br&gt;&lt;br&gt;&lt;b&gt;i)&lt;i&gt; ‘species of urgent concern’ &lt;/b&gt;&lt;/i&gt;shall include species for which the available information indicates that the provisions of Article IV, paragraph 2 (a), 3 or 6 (a), are not being implemented;&lt;br&gt;&lt;b&gt;ii) &lt;i&gt;‘species of possible concern’ &lt;/b&gt;&lt;/i&gt;shall include species for which it is not clear whether or not these provisions are being implemented; and&lt;br&gt;&lt;b&gt;iii) &lt;i&gt;‘species of least concern’ &lt;/i&gt;shall include species for which the available information appears to indicate that these provisions are being met</value>
+  </data>
+  <data name="ProcessReview_Details_12J" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Compilation of information and preliminary categorization&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;j)&lt;/b&gt; before the report of the Secretariat, or consultant, is considered by the Animals or Plants Committee, the Secretariat shall transmit it to the relevant range States, seeking comments and, where appropriate, additional information. Range States shall be given 60 days to respond</value>
+  </data>
+  <data name="ProcessReview_Details_13K" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Review of information and confirming of categorization by the Animals or Plants Committee&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;k)&lt;/b&gt; the Animals or Plants Committee shall review the report of the Secretariat or the consultants and the responses received from the States concerned and, if appropriate, revise the preliminary categorization proposed</value>
+  </data>
+  <data name="ProcessReview_Details_14L" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Review of information and confirming of categorization by the Animals or Plants Committee&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;l)&lt;/b&gt; species of least concern shall be eliminated from the review. Problems identified in the course of the review that are not related to the implementation of Article IV, paragraph 2 (a), 3 or 6 (a), shall be addressed by the Secretariat in accordance with other provisions of the Convention and relevant Resolutions</value>
+  </data>
+  <data name="ProcessReview_Details_15MN" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Formulation of recommendations and their transmission to the range States&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;m)&lt;/b&gt; the Animals or Plants Committee shall, in consultation with the Secretariat, formulate recommendations for the remaining species. These recommendations shall be directed to the range States concerned. &lt;br&gt;&lt;br&gt;&lt;b&gt;n) &lt;/b&gt;for species of urgent concern, these recommendations should propose specific actions to address problems related to the implementation of Article IV, paragraph 2 (a), 3 or 6 (a). Such recommendations should differentiate between short-term and long-term actions, and may include, for example:&lt;br&gt;&lt;br&gt;&lt;b&gt;i)&lt;/b&gt; the establishment of administrative procedures, cautious export quotas or temporary restrictions on exports of the species concerned;&lt;br&gt;&lt;b&gt;ii)&lt;/b&gt; the application of adaptive management procedures to ensure that further decisions about the harvesting and management of the species concerned will be based on the monitoring of the impact of previous harvesting and other factors; or&lt;br&gt;&lt;b&gt;iii) &lt;/b&gt;the conducting of taxon- and country-specific status assessments, field studies or evaluation of threats to populations or other relevant factors to provide the basis for a Scientific Authority’s non-detriment finding, as required under the provisions of Article IV, paragraph 2 (a) or 6 (a). &lt;br&gt;&lt;br&gt;Deadlines for implementation of these recommendations should be determined by the Animals or Plants Committee. They must be appropriate to the nature of the action to be undertaken, and should normally be not less than 90 days but not more than two years after the date of transmission to the State concerned.</value>
+  </data>
+  <data name="ProcessReview_Details_16P" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Formulation of recommendations and their transmission to the range States&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;p)&lt;/b&gt; these recommendations shall be transmitted to the range States concerned by the Secretariat</value>
+  </data>
+  <data name="ProcessReview_Details_17Q" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;q)&lt;/b&gt; the Secretariat shall, in consultation with the Chairman of the Animals or Plants Committee, determine whether the recommendations referred to above have been implemented and report to the Standing Committee accordingly</value>
+  </data>
+  <data name="ProcessReview_Details_18Q" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;q)&lt;/b&gt; the Secretariat shall, in consultation with the Chairman of the Animals or Plants Committee, determine whether the recommendations referred to above have been implemented and report to the Standing Committee accordingly</value>
+  </data>
+  <data name="ProcessReview_Details_19R" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;r)&lt;/b&gt; the recommendations have been met, the Secretariat shall, following consultation with the Chairman of the Standing Committee, notify the Parties that the species was removed from the process</value>
+  </data>
+  <data name="ProcessReview_Details_2" xml:space="preserve">
+    <value>Stage|The current stage of the 22 stage process (a-v) of the Review of Significant Trade as defined in &lt;b&gt;Conf. Res. 12.8 (Rev CoP13) &lt;/b&gt;is highlighted.</value>
+  </data>
+  <data name="ProcessReview_Details_20R" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;r)&lt;/b&gt; the recommendations have been met, the Secretariat shall, following consultation with the Chairman of the Standing Committee, notify the Parties that the species was removed from the process</value>
+  </data>
+  <data name="ProcessReview_Details_21S" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;s)&lt;/b&gt;when the Secretariat, having consulted with the Chairman of the Animals or Plants Committee, is not satisfied that a range State has implemented the recommendations made by the Animals or Plants Committee in accordance with paragraph n) or o), it should recommend to the Standing Committee appropriate action, which may include, as a last resort, a suspension of trade in the affected species with that State. On the basis of the report of the Secretariat, the Standing Committee shall decide on appropriate action and make recommendations to the State concerned, or to all Parties</value>
+  </data>
+  <data name="ProcessReview_Details_22S" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;s)&lt;/b&gt;when the Secretariat, having consulted with the Chairman of the Animals or Plants Committee, is not satisfied that a range State has implemented the recommendations made by the Animals or Plants Committee in accordance with paragraph n) or o), it should recommend to the Standing Committee appropriate action, which may include, as a last resort, a suspension of trade in the affected species with that State. On the basis of the report of the Secretariat, the Standing Committee shall decide on appropriate action and make recommendations to the State concerned, or to all Parties</value>
+  </data>
+  <data name="ProcessReview_Details_23T" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;t)&lt;/b&gt; the Secretariat shall notify the Parties of any recommendations or actions taken by the Standing Committee</value>
+  </data>
+  <data name="ProcessReview_Details_24T" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;t)&lt;/b&gt; the Secretariat shall notify the Parties of any recommendations or actions taken by the Standing Committee</value>
+  </data>
+  <data name="ProcessReview_Details_25U" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;u)&lt;/b&gt; a recommendation to suspend trade in the affected species with the State concerned should be withdrawn only when that State demonstrates to the satisfaction of the Standing Committee, through the Secretariat, compliance with Article IV, paragraph 2 (a), 3 or 6 (a)</value>
+  </data>
+  <data name="ProcessReview_Details_26U" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;u)&lt;/b&gt; a recommendation to suspend trade in the affected species with the State concerned should be withdrawn only when that State demonstrates to the satisfaction of the Standing Committee, through the Secretariat, compliance with Article IV, paragraph 2 (a), 3 or 6 (a)</value>
+  </data>
+  <data name="ProcessReview_Details_27V" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;v)&lt;/b&gt; the Standing Committee, in consultation with the Secretariat and the Chairman of the Animals or Plants Committee, shall review recommendations to suspend trade that have been in place for longer than two years and, if appropriate, take measures to address the situation</value>
+  </data>
+  <data name="ProcessReview_Details_28V" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;v)&lt;/b&gt; the Standing Committee, in consultation with the Secretariat and the Chairman of the Animals or Plants Committee, shall review recommendations to suspend trade that have been in place for longer than two years and, if appropriate, take measures to address the situation</value>
+  </data>
+  <data name="ProcessReview_Details_29V" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt; Measures to be taken regarding the implementation of recommendations&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br &gt;&lt;b&gt;v)&lt;/b&gt; the Standing Committee, in consultation with the Secretariat and the Chairman of the Animals or Plants Committee, shall review recommendations to suspend trade that have been in place for longer than two years and, if appropriate, take measures to address the situation</value>
+  </data>
+  <data name="ProcessReview_Details_3" xml:space="preserve">
+    <value>Status|Details of previous stages of the process can be viewed using &lt;i&gt;View History.&lt;/i&gt; The current stage is highlighed and is &lt;i&gt;In progress&lt;/i&gt;.  The current stage can be edited using Process.&lt;br&gt;&lt;br&gt; Once each stage is completed, details will be published on the website and the species/country combination will progress to the next stage (which is otherwise displayed as &lt;i&gt;Not yet applicable.&lt;/i&gt; </value>
+  </data>
+  <data name="ProcessReview_Details_4" xml:space="preserve">
+    <value>Status|Details of previous stages can be viewed using &lt;i&gt;View History.&lt;/i&gt; The current stage can be edited using Process.</value>
+  </data>
+  <data name="ProcessReview_Details_5AtoC" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt;Selection of species to be reviewed&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;a)&lt;/b&gt; the Secretariat shall request the UNEP World Conservation Monitoring Centre to produce, within 90 days after each meeting of the Conference of the Parties, a summary from the CITES database of annual report statistics showing the recorded net level of exports1 for Appendix-II species over the five most recent years; &lt;br&gt;&lt;br&gt;&lt;b&gt;b) &lt;/b&gt; on the basis of recorded trade levels and information available to the Animals or Plants Committee, the Secretariat, Parties or other relevant experts, species of priority concern shall be selected for review by the Animals or Plants Committee (whether or not such species have been the subject of a previous review);&lt;br&gt;&lt;br&gt;&lt;b&gt;c) &lt;/b&gt;in exceptional cases where new information indicates an urgent concern, the Animals or Plants Committee may add a species to the list of species of concern at another stage</value>
+  </data>
+  <data name="ProcessReview_Details_6D" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt;Consultation with the range States concerning implementation of Article IV&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;d) &lt;/b&gt;the Secretariat shall, within 30 days after the meeting of the Animals or Plants Committee at which species are selected, notify range States of the species selected, providing an explanation for this selection and requesting comments regarding possible problems of implementing Article IV identified by the Committee. </value>
+  </data>
+  <data name="ProcessReview_Details_7D" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt;Selection of species to be reviewed&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;Range States shall be given 60 days to respond.</value>
+  </data>
+  <data name="ProcessReview_Details_8E" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt;Selection of species to be reviewed&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;e)&lt;/b&gt;the Secretariat shall report to the Animals or Plants Committee on the response of the range States concerned, including any other pertinent information</value>
+  </data>
+  <data name="ProcessReview_Details_9F" xml:space="preserve">
+    <value>Stage Details|&lt;b&gt;&lt;i&gt;Selection of species to be reviewed&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;f)&lt;/b&gt;when the Animals or Plants Committee, having reviewed the available information, is satisfied that Article IV, paragraph 2 (a), 3 or 6 (a), is correctly implemented, the species shall be eliminated from the review with respect to the State concerned. In that event, the Secretariat shall notify the Parties accordingly within 60 days</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_1" xml:space="preserve">
+    <value>Hyperlink | If the location of a document on a website changes, this link will be broken.  &lt;br&gt;&lt;br&gt;It is preferable to upload documents if possible.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_11" xml:space="preserve">
+    <value>Decision Type|Select Decision type. New Decisions can be added by Administrators using the Site Admin &gt; Decisions &gt; Add Decisions</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_12" xml:space="preserve">
+    <value>Notes| Add the reason for decision type. If a trade suspended,..</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_13" xml:space="preserve">
+    <value>Suspension Lifted Date|Add the data the suspension was lifted</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_14" xml:space="preserve">
+    <value>Trade Terms| Select the term for which trade is suspended. Additional trade terms can be added by....</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_15" xml:space="preserve">
+    <value>Decision/Suspension Date|</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_16" xml:space="preserve">
+    <value>Meeting at which suspension was established|Add relevent meeting </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_17" xml:space="preserve">
+    <value>Meeting at which suspension was lifted|Add relevent meeting</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_18" xml:space="preserve">
+    <value>Documents| A document may include Standing Committee documents which explain the reasons why a trade suspension has been implemented or withdrawn, or correspondence from range States. &lt;br&gt;&lt;br&gt;The Secretariat will be notified when new documents are added.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_19" xml:space="preserve">
+    <value>Completed|Tick the checkbox if the stage of the process (a-v) has been completed. The status will then progress to the next stage in the process.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_2" xml:space="preserve">
+    <value>Comments|Add a comment to describe documents uploaded or linked by a hyperlink </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_3" xml:space="preserve">
+    <value>Documents|A document may include correspondence between the range State and the Secretariat.  &lt;br&gt;&lt;br&gt;The Secretariat will be notified when new documents are added.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_4" xml:space="preserve">
+    <value>Document name | Name files using the following protocol: Genus_species_two letter ISOcountry code.doc. For example:  Prunus_africana_KE.  Use underscores rather than spaces,  and avoid using characters that are not letters of the alphabet.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_5" xml:space="preserve">
+    <value>Access Rights| Document viewing is  limited by access rights. </value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_6" xml:space="preserve">
+    <value>Recommendation|Each recommendation directed to the range State should be added individually in full, e.g. &lt;i&gt;"Develop a scientifically-based survey to establish the population status of the species in the country". &lt;/i&gt;Each recommendation will have a specific timeframe for implememtation.</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_7" xml:space="preserve">
+    <value>Recommendation Date|Add the date the recommendation was formulated at the relevant Committee meeting</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_8" xml:space="preserve">
+    <value>Committee |Select the meeting at which the recommendation was formulated. New meetings can be added by Administrators using the Side Admin &gt; Meetings &gt; New Meeting</value>
+  </data>
+  <data name="ProcessReview_ParagraphDetails_Edit_Review_9" xml:space="preserve">
+    <value>Deadline Date|Add the deadline for implementation of the recommendation as determined by the Animals of Plants Committee</value>
+  </data>
+  <data name="Role_Index_1" xml:space="preserve">
+    <value>Administrator |</value>
+  </data>
+  <data name="Role_Index_2" xml:space="preserve">
+    <value>Data Contributor |</value>
+  </data>
+  <data name="Role_Index_3" xml:space="preserve">
+    <value>Data Manager |</value>
+  </data>
+  <data name="Role_Index_4" xml:space="preserve">
+    <value>Full Viewer |</value>
+  </data>
+  <data name="Role_Index_5" xml:space="preserve">
+    <value>Intermediate Viewer |</value>
+  </data>
+  <data name="Role_Index_6" xml:space="preserve">
+    <value>Public Viewer |</value>
+  </data>
+  <data name="SearchByCountry" xml:space="preserve">
+    <value>Search by Country|Only countries that are currently subject to the Significant Trade Review process or have been previously eliminated from the review are included.</value>
+  </data>
+  <data name="SearchFreeSearch" xml:space="preserve">
+    <value>Search by Species | Type in at least the first three letters of the species required. Species containing this search string in any part of the taxon name will appear in the drop-down box below. &lt;br&gt;&lt;br&gt; Animals are denoted by (An) and Plants by (Pl)&lt;br&gt;&lt;br&gt;The search results will only display species that have been included in the Review of Significant Trade. &lt;br&gt;&lt;br&gt;
+The search tool is not case sensitive.</value>
+  </data>
+  <data name="SelectGenus" xml:space="preserve">
+    <value>Select Genus|Only genera that are currently subject to the Significant Trade Review or have been previously eliminated from the review are included.</value>
+  </data>
+  <data name="SelectPhase" xml:space="preserve">
+    <value>Select Phase|The selection process for adding new species for the Significant Trade Review takes place periodically in Phases.&lt;br&gt;  A new Phase now follows every meeting of the Conference of the Parties.</value>
+  </data>
+</root>

@@ -1,0 +1,113 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml">
+
+<head>
+<title> Microsoft AJAX Library 3.5 SP1 Readme </title>
+<style>
+body
+{
+    margin-left:.75in;
+    margin-right:2.25in;
+    margin-top:.5in;
+    margin-botton:.25in;
+    font-family:verdana;
+    font-size:10pt;
+}
+
+h1
+{
+   font-size:20pt;
+   padding-top:.20in;
+   margin-left:-.25in;
+}
+
+h2
+{
+   font-size:16pt;
+   padding-top:.2in;
+   margin-left:-.25in;
+}
+
+li
+{
+   margin-top:3pt;
+   margin-botton:6pt;
+
+}
+
+p.note
+{
+   margin-left:.5in;
+}
+
+</style>
+</head>
+<body>
+<h1>Microsoft AJAX Library 3.5 SP1 Readme</h1>
+
+<h2>Overview</h2>
+
+<p>For AJAX development, the Microsoft AJAX Library package contains the
+complete set of client JavaScript resources for ASP.NET AJAX client framework
+components in ASP.NET 3.5 SP1. The Microsoft AJAX Library is primarily intended for these
+scenarios:</p>
+
+<ul>
+	<li>Building client-centric AJAX applications on any platform and with any server-based
+	technology, including those that have
+	no dependency on ASP.NET, such as PHP and ColdFusion.</li>
+	<li>In ASP.NET AJAX applications, using the Microsoft AJAX JavaScript runtime
+	from the file system and not from embedded resources. The <strong>ScriptPath</strong> property
+	of the <strong>ScriptManager</strong> class can be used for this purpose. </li>
+</ul>
+
+<p class="note"><strong>Note</strong> &nbsp;For ASP.NET users, the Microsoft AJAX Library includes the JavaScript resource files that are available to ASP.NET pages that
+contain a <strong>ScriptManager</strong> server control.</p>
+
+<h2>New feature</h2>
+The Microsoft Ajax Library 3.5 SP1 adds browser history support (back button management). More details about this feature can be found here:<br/>
+<ul>
+<li>
+  Managing Browser History Using Client Script: <a href="http://msdn.microsoft.com/en-us/library/cc488538.aspx">http://msdn.microsoft.com/en-us/library/cc488538.aspx</a>
+</li>
+<li>
+  Sys.Application.addHistoryPoint: <a href="http://msdn.microsoft.com/en-us/library/cc488025.aspx">http://msdn.microsoft.com/en-us/library/cc488025.aspx</a>
+</li>
+<li>
+  Sys.Application.navigate event: <a href="http://msdn.microsoft.com/en-us/library/cc488024.aspx">http://msdn.microsoft.com/en-us/library/cc488024.aspx</a>
+</li>
+</ul>
+In order to allow the browser history feature without using the server-side <strong>ScriptManager</strong> control,
+it is necessary to add the following markup into the page for Internet Explorer versions before 8:<br/>
+&lt;iframe id="__historyFrame" src="/System.Web.Extensions/3.5.0.0/3.5.30729.1/empty.htm" style="display:none;"&gt;&lt;/iframe&gt;<br/>
+And the following for Safari 2:<br/>
+&lt;input type="text" id="__history" style="display:none"/&gt;
+
+<h2>Supported Browsers</h2>
+<p>The Microsoft AJAX Library package supports the following browsers:</p>
+<ul>
+	<li>Microsoft Internet Explorer 6.0 and 7.0</li>
+	<li>Mozilla Firefox 1.5, 2.0 and 3.0</li>
+	<li>Apple Safari 3.0</li>
+	<li>Opera 9.5</li>
+</ul>
+
+<h2>Useful Links</h2>
+<ul>
+<li>
+	Community Web site: <a href="http://www.asp.net"> http://www.asp.net </a>
+</li>
+<li>
+	 Download location: <a href="http://www.asp.net/ajax/downloads/">http://www.asp.net/ajax/downloads/</a>
+</li>
+<li>
+	Documentation: <a href="http://msdn.microsoft.com/en-us/library/bb397536.aspx">http://msdn.microsoft.com/en-us/library/bb397536.aspx</a>
+</li>
+<li>
+	Community Forum:
+
+	<a href="http://forums.asp.net/1007.aspx">http://forums.asp.net/1007.aspx</a>
+</li>
+</ul>
+</body>
+</html>

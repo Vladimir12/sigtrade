@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/SigTrade2/!svn/ver/803/trunk/SigTrade/Views/Shared
+END
+UserDetails.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/SigTrade2/!svn/ver/758/trunk/SigTrade/Views/Shared/UserDetails.ascx
+END
+Error.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/SigTrade2/!svn/ver/532/trunk/SigTrade/Views/Shared/Error.aspx
+END
+Recommendations.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/SigTrade2/!svn/ver/351/trunk/SigTrade/Views/Shared/Recommendations.ascx
+END
+LogOnUserControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/SigTrade2/!svn/ver/720/trunk/SigTrade/Views/Shared/LogOnUserControl.ascx
+END
+Site.Master
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/SigTrade2/!svn/ver/803/trunk/SigTrade/Views/Shared/Site.Master
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/SigTrade2/!svn/ver/796/trunk/SigTrade/Views/ProcessReview
+END
+Details.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/SigTrade2/!svn/ver/764/trunk/SigTrade/Views/ProcessReview/Details.aspx
+END
+EditComment.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/SigTrade2/!svn/ver/532/trunk/SigTrade/Views/ProcessReview/EditComment.aspx
+END
+display_documents.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/SigTrade2/!svn/ver/739/trunk/SigTrade/Views/ProcessReview/display_documents.ascx
+END
+Recommendations.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/SigTrade2/!svn/ver/796/trunk/SigTrade/Views/ProcessReview/Recommendations.ascx
+END
+ParagraphDetails.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/SigTrade2/!svn/ver/517/trunk/SigTrade/Views/ProcessReview/ParagraphDetails.aspx
+END
+edit_comments.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/SigTrade2/!svn/ver/740/trunk/SigTrade/Views/ProcessReview/edit_comments.ascx
+END
+ParagraphDetailsEdit.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/SigTrade2/!svn/ver/775/trunk/SigTrade/Views/ProcessReview/ParagraphDetailsEdit.aspx
+END
+Decisions.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/SigTrade2/!svn/ver/554/trunk/SigTrade/Views/ProcessReview/Decisions.ascx
+END
+ParagraphDetailsAdd.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/SigTrade2/!svn/ver/773/trunk/SigTrade/Views/ProcessReview/ParagraphDetailsAdd.aspx
+END

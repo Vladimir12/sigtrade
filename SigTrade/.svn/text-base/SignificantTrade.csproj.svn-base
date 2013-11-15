@@ -1,0 +1,1896 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92B3FAAA-9CC7-44AD-AD67-CA4EFBD1270C}</ProjectGuid>
+    <ProjectTypeGuids>{603c0e0b-db56-11dc-be95-000d561079b0};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SigTrade</RootNamespace>
+    <AssemblyName>SigTrade</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.2.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Subsonic\SubSonic2.2\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft ASP.NET\ASP.NET MVC RC\Assemblies\System.Web.Abstractions.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Microsoft ASP.NET\ASP.NET MVC RC\Assemblies\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft ASP.NET\ASP.NET MVC RC\Assemblies\System.Web.Routing.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\SigTrade.Designer.cs" />
+    <Compile Include="App_GlobalResources\SigTrade1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SigTrade.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SigTrade.es-ES.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SigTrade.es-ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SigTrade.fr-FR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SigTrade.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Tooltips.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tooltips.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Tooltips.es-ES.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tooltips.es-ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Tooltips.fr-FR.designer.cs" />
+    <Compile Include="App_GlobalResources\Tooltips.fr-FR1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tooltips.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AddReviewController.cs" />
+    <Compile Include="Controllers\CommitteesController.cs" />
+    <Compile Include="Controllers\MeetingsController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
+    <Compile Include="Controllers\MessageLogController.cs" />
+    <Compile Include="Controllers\MessageTemplateController.cs" />
+    <Compile Include="Controllers\PhasesController.cs" />
+    <Compile Include="Controllers\ProcessReviewController.cs" />
+    <Compile Include="Controllers\RecommendationController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\SearchReviewController.cs" />
+    <Compile Include="DataAccess\Generated\AllStructs.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ADistribCty.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ADistribCtyController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\AFamily.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\AFamilyController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\AGenu.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\AGenuController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\AKingdom.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\AKingdomController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ALegal.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ALegalController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\AnimalsSpecy.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\AnimalsSpecyController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ASpecy.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ASpecyController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ATaxClass.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ATaxClassController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ATaxOrder.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ATaxOrderController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ATaxPhylum.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\ATaxPhylumController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\CommitteeLib.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\Country.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\CountryController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\GeneralLib.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\GeneralLibController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PDistribCty.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PDistribCtyController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PFamily.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PFamilyController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PGenu.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PGenuController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\Phase.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PhaseController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PlantsSpecy.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PlantsSpecyController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PLegal.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PLegalController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PSpecy.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\PSpecyController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\StoredProcedures.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\TblMeetingLib.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\TblMeetingLibController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\TblPhase.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\TblPhaseController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\TblReview.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\TblReviewController.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\VwAnimalsTaxa.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\VwCountrySpecy.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\VwGenusSpecy.cs" />
+    <Compile Include="DataAccess\Generated\SignificantTradeSS\VwPlantsTaxa.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\ADistribCty.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AFamily.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AGenu.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AKingdom.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\ALegal.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AnimalsSpecy.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AnimalsTaxa.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\ASpecy.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetApplication.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetMembership.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetPath.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetPersonalizationAllUser.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetPersonalizationPerUser.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetProfile.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetRole.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetSchemaVersion.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetUser.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetUsersInRole.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\AspnetWebEventEvent.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\ATaxClass.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\ATaxOrder.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\ATaxPhylum.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\Comment.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\CommitteeLib.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\Country.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\Decision.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\Document.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\GeneralLib.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\MeetingLib.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\MessageLog.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\MessageTemplate.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\ParagraphAction.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\ParagraphActionLib.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\PDistribCty.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\PFamily.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\PGenu.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\Phase.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\PlantsSpecy.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\PlantsTaxa.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\PLegal.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\PSpecy.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\Recommendation.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\Review.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\ReviewStatus.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\StoredProcedures.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\TblPhase.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\TblReview.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\UsersParagraphLink.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAllReview.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAnimalsTaxa.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAspnetApplication.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAspnetMembershipUser.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAspnetProfile.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAspnetRole.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAspnetUser.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAspnetUsersInRole.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAspnetWebPartStatePath.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAspnetWebPartStateShared.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwAspnetWebPartStateUser.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwCountry.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwCountrySpecy.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwGenusSpecy.cs" />
+    <Compile Include="DataAccess\Generated\SSRepository\VwPlantsTaxa.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ICommentsRepository.cs" />
+    <Compile Include="Interfaces\ICommitteeLibRepository.cs" />
+    <Compile Include="Interfaces\ICountryRepository.cs" />
+    <Compile Include="Interfaces\IDecisionsRepository.cs" />
+    <Compile Include="Interfaces\IDocumentsRepository.cs" />
+    <Compile Include="Interfaces\IGenericRepository.cs" />
+    <Compile Include="Interfaces\IMeetingLibRepository.cs" />
+    <Compile Include="Interfaces\IMembershipRepository.cs" />
+    <Compile Include="Interfaces\IMessageLogRepository.cs" />
+    <Compile Include="Interfaces\IMessageTemplateRepository.cs" />
+    <Compile Include="Interfaces\IPhaseRepository.cs" />
+    <Compile Include="Interfaces\IRecommendationsRepository.cs" />
+    <Compile Include="Interfaces\IReviewRepository.cs" />
+    <Compile Include="Interfaces\ISPRepository.cs" />
+    <Compile Include="Interfaces\ITaxonRepository.cs" />
+    <Compile Include="Models\AGeneralTaxon.cs" />
+    <Compile Include="Models\APhylum.cs" />
+    <Compile Include="Models\ASpeciesTaxon.cs" />
+    <Compile Include="Models\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\CommentsRepository.cs" />
+    <Compile Include="Models\CommitteeLibRepository.cs" />
+    <Compile Include="Models\CountryRepository.cs" />
+    <Compile Include="Models\DecisionDetails.cs" />
+    <Compile Include="Models\DecisionsRepository.cs" />
+    <Compile Include="Models\DocumentsRepository.cs" />
+    <Compile Include="Models\GenericRepository.cs" />
+    <Compile Include="Models\MeetingLibRepository.cs" />
+    <Compile Include="Models\MeetingLibSP.cs" />
+    <Compile Include="Models\MembershipRepository.cs" />
+    <Compile Include="Models\MessageLogRepository.cs" />
+    <Compile Include="Models\MessageTemplateRepository.cs" />
+    <Compile Include="Models\PALibExtra.cs" />
+    <Compile Include="Models\ParagraphActionDetails.cs" />
+    <Compile Include="Models\ParagraphComment.cs" />
+    <Compile Include="Models\ParagraphDocument.cs" />
+    <Compile Include="Models\PhaseRepository.cs" />
+    <Compile Include="Models\Profile.cs" />
+    <Compile Include="Models\RecommendationsRepository.cs" />
+    <Compile Include="Models\ReviewDesc.cs" />
+    <Compile Include="Models\ReviewRepository.cs" />
+    <Compile Include="Models\SelectItems.cs" />
+    <Compile Include="Models\SPRepository.cs" />
+    <Compile Include="Models\TaxonRepository.cs" />
+    <Compile Include="Models\Taxons.cs" />
+    <Compile Include="Models\UpdateUtils.cs" />
+    <Compile Include="Interfaces\IPagedList.cs" />
+    <Compile Include="Paging\PagedList.cs" />
+    <Compile Include="Paging\Pager.cs" />
+    <Compile Include="Paging\PagingExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Report\Generic.cs">
+      <DependentUpon>Generic.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Report\Generic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Generic.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\Paragraph.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Paragraph.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\AddReview\ReviewIndex.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-1.2.6.js" />
+    <Content Include="Scripts\jquery-1.2.6.min.js" />
+    <Content Include="Scripts\jquery-1.2.6-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.2.6.min-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\SigTrade.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SigTrade1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Content\jquery-1.3.1-vsdoc.js" />
+    <Content Include="Content\jquery.form.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\license.htm" />
+    <Content Include="Content\MicrosoftAjaxLibrary\pid.txt" />
+    <Content Include="Content\MicrosoftAjaxLibrary\readme.htm" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\empty.htm" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\af-ZA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\am-ET.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-AE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-BH.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-DZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-EG.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-IQ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-JO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-KW.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-LB.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-LY.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-MA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-OM.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-QA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-SA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-SY.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-TN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ar-YE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\arn-CL.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\as-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\az-Cyrl-AZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\az-Latn-AZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ba-RU.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\be-BY.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\bg-BG.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\bn-BD.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\bn-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\bo-CN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\br-FR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\bs-Cyrl-BA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\bs-Latn-BA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ca-ES.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\co-FR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\cs-CZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\cy-GB.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\da-DK.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\de-AT.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\de-CH.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\de-DE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\de-LI.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\de-LU.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\dsb-DE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\dv-MV.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\el-GR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-029.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-AU.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-BZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-CA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-GB.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-IE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-JM.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-MY.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-NZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-PH.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-SG.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-TT.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-US.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-ZA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\en-ZW.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-AR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-BO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-CL.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-CO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-CR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-DO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-EC.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-ES.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-GT.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-HN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-MX.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-NI.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-PA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-PE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-PR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-PY.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-SV.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-US.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-UY.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\es-VE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\et-EE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\eu-ES.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fa-IR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fi-FI.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fil-PH.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fo-FO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fr-BE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fr-CA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fr-CH.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fr-FR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fr-LU.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fr-MC.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\fy-NL.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ga-IE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\gl-ES.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\gsw-FR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\gu-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ha-Latn-NG.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\he-IL.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\hi-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\hr-BA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\hr-HR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\hsb-DE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\hu-HU.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\hy-AM.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\id-ID.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ig-NG.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ii-CN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\is-IS.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\it-CH.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\it-IT.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\iu-Cans-CA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\iu-Latn-CA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ja-JP.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ka-GE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\kk-KZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\kl-GL.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\km-KH.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\kn-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ko-KR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\kok-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ky-KG.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\lb-LU.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\lo-LA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\lt-LT.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\lv-LV.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\mi-NZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\mk-MK.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ml-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\mn-MN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\mn-Mong-CN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\moh-CA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\mr-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ms-BN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ms-MY.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\mt-MT.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\nb-NO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ne-NP.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\nl-BE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\nl-NL.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\nn-NO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\nso-ZA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\oc-FR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\or-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\pa-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\pl-PL.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\prs-AF.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ps-AF.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\pt-BR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\pt-PT.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\qut-GT.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\quz-BO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\quz-EC.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\quz-PE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\rm-CH.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ro-RO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ru-RU.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\rw-RW.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sa-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sah-RU.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\se-FI.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\se-NO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\se-SE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\si-LK.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sk-SK.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sl-SI.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sma-NO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sma-SE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\smj-NO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\smj-SE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\smn-FI.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sms-FI.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sq-AL.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sr-Cyrl-BA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sr-Cyrl-CS.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sr-Latn-BA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sr-Latn-CS.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sv-FI.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sv-SE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\sw-KE.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\syr-SY.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ta-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\te-IN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\tg-Cyrl-TJ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\th-TH.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\tk-TM.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\tn-ZA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\tr-TR.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\tt-RU.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\tzm-Latn-DZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ug-CN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\uk-UA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\ur-PK.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\uz-Cyrl-UZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\uz-Latn-UZ.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\vi-VN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\wo-SN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\xh-ZA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\yo-NG.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\zh-CN.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\zh-HK.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\zh-MO.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\zh-SG.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\zh-TW.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\Globalization\zu-ZA.js" />
+    <Content Include="Content\MicrosoftAjaxLibrary\System.Web.Extensions\3.5.0.0\3.5.30729.1\MicrosoftAjax.js" />
+    <Content Include="Content\MicrosoftAjaxTemplates.debug.js" />
+    <Content Include="Content\MicrosoftAjaxTemplates.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\AddReview\List.aspx" />
+    <Content Include="Views\ProcessReview\Details.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\additional-methods.js" />
+    <Content Include="Content\application.js" />
+    <Content Include="Content\CSS\blueprint\ie.css" />
+    <Content Include="Content\CSS\blueprint\plugins\buttons\icons\cross.png" />
+    <Content Include="Content\CSS\blueprint\plugins\buttons\icons\key.png" />
+    <Content Include="Content\CSS\blueprint\plugins\buttons\icons\tick.png" />
+    <Content Include="Content\CSS\blueprint\plugins\buttons\readme.txt" />
+    <Content Include="Content\CSS\blueprint\plugins\buttons\screen.css" />
+    <Content Include="Content\CSS\blueprint\plugins\fancy-type\readme.txt" />
+    <Content Include="Content\CSS\blueprint\plugins\fancy-type\screen.css" />
+    <Content Include="Content\CSS\blueprint\plugins\link-icons\icons\doc.png" />
+    <Content Include="Content\CSS\blueprint\plugins\link-icons\icons\email.png" />
+    <Content Include="Content\CSS\blueprint\plugins\link-icons\icons\external.png" />
+    <Content Include="Content\CSS\blueprint\plugins\link-icons\icons\feed.png" />
+    <Content Include="Content\CSS\blueprint\plugins\link-icons\icons\im.png" />
+    <Content Include="Content\CSS\blueprint\plugins\link-icons\icons\pdf.png" />
+    <Content Include="Content\CSS\blueprint\plugins\link-icons\icons\visited.png" />
+    <Content Include="Content\CSS\blueprint\plugins\link-icons\icons\xls.png" />
+    <Content Include="Content\CSS\blueprint\plugins\link-icons\readme.txt" />
+    <Content Include="Content\CSS\blueprint\plugins\link-icons\screen.css" />
+    <Content Include="Content\CSS\blueprint\plugins\rtl\readme.txt" />
+    <Content Include="Content\CSS\blueprint\plugins\rtl\screen.css" />
+    <Content Include="Content\CSS\blueprint\print.css" />
+    <Content Include="Content\CSS\blueprint\screen.css" />
+    <Content Include="Content\CSS\blueprint\src\forms.css" />
+    <Content Include="Content\CSS\blueprint\src\grid.css" />
+    <Content Include="Content\CSS\blueprint\src\grid.png" />
+    <Content Include="Content\CSS\blueprint\src\ie.css" />
+    <Content Include="Content\CSS\blueprint\src\print.css" />
+    <Content Include="Content\CSS\blueprint\src\reset.css" />
+    <Content Include="Content\CSS\blueprint\src\typography.css" />
+    <Content Include="Content\CSS\jquery-ui-1.7.2.custom.css" />
+    <Content Include="Content\CSS\jquery.cluetip.css" />
+    <Content Include="Content\CSS\Site.css" />
+    <Content Include="Content\CSS\style.css" />
+    <Content Include="Content\CSS\superfish-navbar.css" />
+    <Content Include="Content\CSS\superfish-vertical.css" />
+    <Content Include="Content\CSS\superfish.css" />
+    <Content Include="Content\CSS\ui.multiselect.css" />
+    <Content Include="Content\cufon-yui.js" />
+    <Content Include="Content\hoverIntent.js" />
+    <Content Include="Content\i18n\jquery.ui.i18n.all.js" />
+    <Content Include="Content\i18n\ui.datepicker-ar.js" />
+    <Content Include="Content\i18n\ui.datepicker-bg.js" />
+    <Content Include="Content\i18n\ui.datepicker-ca.js" />
+    <Content Include="Content\i18n\ui.datepicker-cs.js" />
+    <Content Include="Content\i18n\ui.datepicker-da.js" />
+    <Content Include="Content\i18n\ui.datepicker-de.js" />
+    <Content Include="Content\i18n\ui.datepicker-el.js" />
+    <Content Include="Content\i18n\ui.datepicker-eo.js" />
+    <Content Include="Content\i18n\ui.datepicker-es.js" />
+    <Content Include="Content\i18n\ui.datepicker-fa.js" />
+    <Content Include="Content\i18n\ui.datepicker-fi.js" />
+    <Content Include="Content\i18n\ui.datepicker-fr.js" />
+    <Content Include="Content\i18n\ui.datepicker-he.js" />
+    <Content Include="Content\i18n\ui.datepicker-hr.js" />
+    <Content Include="Content\i18n\ui.datepicker-hu.js" />
+    <Content Include="Content\i18n\ui.datepicker-hy.js" />
+    <Content Include="Content\i18n\ui.datepicker-id.js" />
+    <Content Include="Content\i18n\ui.datepicker-is.js" />
+    <Content Include="Content\i18n\ui.datepicker-it.js" />
+    <Content Include="Content\i18n\ui.datepicker-ja.js" />
+    <Content Include="Content\i18n\ui.datepicker-ko.js" />
+    <Content Include="Content\i18n\ui.datepicker-lt.js" />
+    <Content Include="Content\i18n\ui.datepicker-lv.js" />
+    <Content Include="Content\i18n\ui.datepicker-ms.js" />
+    <Content Include="Content\i18n\ui.datepicker-nl.js" />
+    <Content Include="Content\i18n\ui.datepicker-no.js" />
+    <Content Include="Content\i18n\ui.datepicker-pl.js" />
+    <Content Include="Content\i18n\ui.datepicker-pt-BR.js" />
+    <Content Include="Content\i18n\ui.datepicker-ro.js" />
+    <Content Include="Content\i18n\ui.datepicker-ru.js" />
+    <Content Include="Content\i18n\ui.datepicker-sk.js" />
+    <Content Include="Content\i18n\ui.datepicker-sl.js" />
+    <Content Include="Content\i18n\ui.datepicker-sq.js" />
+    <Content Include="Content\i18n\ui.datepicker-sv.js" />
+    <Content Include="Content\i18n\ui.datepicker-th.js" />
+    <Content Include="Content\i18n\ui.datepicker-tr.js" />
+    <Content Include="Content\i18n\ui.datepicker-uk.js" />
+    <Content Include="Content\i18n\ui.datepicker-zh-CN.js" />
+    <Content Include="Content\i18n\ui.datepicker-zh-TW.js" />
+    <Content Include="Content\images\arrows-ffffff.png" />
+    <Content Include="Content\images\asc.gif" />
+    <Content Include="Content\images\asc.png" />
+    <Content Include="Content\images\background.png" />
+    <Content Include="Content\images\background_green.png" />
+    <Content Include="Content\images\bg.gif" />
+    <Content Include="Content\images\bg.png" />
+    <Content Include="Content\images\desc.gif" />
+    <Content Include="Content\images\desc.png" />
+    <Content Include="Content\images\menu_back.png" />
+    <Content Include="Content\images\shadow.png" />
+    <Content Include="Content\images\title.png" />
+    <Content Include="Content\images\title_2.png" />
+    <Content Include="Content\images\UNEP-WCMC_GREY.png" />
+    <Content Include="Content\jquery-1.3.2.min.js" />
+    <Content Include="Content\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="Content\jquery-ui-personalized-1.6rc6.js" />
+    <Content Include="Content\jquery-ui-personalized-1.6rc6.min.js" />
+    <Content Include="Content\jquery.bgiframe.min.js" />
+    <Content Include="Content\jquery.cluetip.js" />
+    <Content Include="Content\jquery.color.js" />
+    <Content Include="Content\jquery.colorize-1.3.1.js" />
+    <Content Include="Content\jquery.dimensions-1.2.js" />
+    <Content Include="Content\jquery.hoverIntent.js" />
+    <Content Include="Content\jquery.livequery.js" />
+    <Content Include="Content\jquery.selectboxes.js" />
+    <Content Include="Content\jquery.selectboxes.min.js" />
+    <Content Include="Content\jquery.tablesorter.min.js" />
+    <Content Include="Content\jquery.validate.min.js" />
+    <Content Include="Content\localization\messages_cn.js" />
+    <Content Include="Content\localization\messages_cs.js" />
+    <Content Include="Content\localization\messages_da.js" />
+    <Content Include="Content\localization\messages_de.js" />
+    <Content Include="Content\localization\messages_es.js" />
+    <Content Include="Content\localization\messages_fr.js" />
+    <Content Include="Content\localization\messages_hu.js" />
+    <Content Include="Content\localization\messages_it.js" />
+    <Content Include="Content\localization\messages_nl.js" />
+    <Content Include="Content\localization\messages_no.js" />
+    <Content Include="Content\localization\messages_pl.js" />
+    <Content Include="Content\localization\messages_ptbr.js" />
+    <Content Include="Content\localization\messages_ro.js" />
+    <Content Include="Content\localization\messages_ru.js" />
+    <Content Include="Content\localization\messages_se.js" />
+    <Content Include="Content\localization\messages_tr.js" />
+    <Content Include="Content\localization\messages_ua.js" />
+    <Content Include="Content\CSS\mine.css" />
+    <Content Include="Content\Myriad_Pro_600.font.js" />
+    <Content Include="Content\superfish.js" />
+    <Content Include="Content\supersubs.js" />
+    <Content Include="Content\theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\theme\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\theme\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\theme\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\theme\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\theme\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\theme\ui.accordion.css" />
+    <Content Include="Content\theme\ui.all.css" />
+    <Content Include="Content\theme\ui.base.css" />
+    <Content Include="Content\theme\ui.core.css" />
+    <Content Include="Content\theme\ui.datepicker.css" />
+    <Content Include="Content\theme\ui.dialog.css" />
+    <Content Include="Content\theme\ui.progressbar.css" />
+    <Content Include="Content\theme\ui.resizable.css" />
+    <Content Include="Content\theme\ui.slider.css" />
+    <Content Include="Content\theme\ui.tabs.css" />
+    <Content Include="Content\theme\ui.theme.css" />
+    <Content Include="Content\thickbox.js" />
+    <Content Include="Content\ui.multiselect.js" />
+    <Content Include="Views\Account\account_form.ascx" />
+    <Content Include="Views\Account\Edit.aspx" />
+    <Content Include="Views\Account\index.aspx" />
+    <Content Include="Views\Account\show.aspx" />
+    <Content Include="Views\AddReview\AddReview.aspx" />
+    <Content Include="Views\AddReview\EditReview.aspx" />
+    <Content Include="Views\AddReview\ListAll.aspx" />
+    <Content Include="Views\AddReview\list_reviews.ascx" />
+    <Content Include="Views\Committees\committee_form.ascx" />
+    <Content Include="Views\Committees\create.aspx" />
+    <Content Include="Views\Committees\edit.aspx" />
+    <Content Include="Views\Committees\Index.aspx" />
+    <Content Include="Views\MessageLog\Meetings\Create.aspx" />
+    <Content Include="Views\MessageLog\Meetings\Edit.aspx" />
+    <Content Include="Views\MessageLog\Meetings\Index.aspx" />
+    <Content Include="Views\MessageLog\Index.aspx" />
+    <Content Include="Views\MessageTemplate\Create.aspx" />
+    <Content Include="Views\MessageTemplate\Detail.aspx" />
+    <Content Include="Views\MessageTemplate\Edit.aspx" />
+    <Content Include="Views\MessageTemplate\Index.aspx" />
+    <Content Include="Views\Phases\create.aspx" />
+    <Content Include="Views\Phases\edit.aspx" />
+    <Content Include="Views\Phases\index.aspx" />
+    <Content Include="Views\Phases\phase_form.ascx" />
+    <Content Include="Views\Phases\show.aspx" />
+    <Content Include="Views\ProcessReview\Decisions.ascx" />
+    <Content Include="Views\ProcessReview\display_documents.ascx" />
+    <Content Include="Views\ProcessReview\EditComment.aspx" />
+    <Content Include="Views\ProcessReview\edit_comments.ascx" />
+    <Content Include="Views\ProcessReview\ParagraphDetails.aspx" />
+    <Content Include="Views\ProcessReview\ParagraphDetailsAdd.aspx" />
+    <Content Include="Views\ProcessReview\ParagraphDetailsEdit.aspx" />
+    <Content Include="Views\ProcessReview\Recommendations.ascx" />
+    <Content Include="Views\Report\Index.aspx" />
+    <Content Include="Views\Role\Index.aspx" />
+    <Content Include="Views\Role\Show.aspx" />
+    <Content Include="Views\Role\users_to_role_table.ascx" />
+    <Content Include="Views\SearchReview\Search.aspx" />
+    <Content Include="Views\Shared\UserDetails.ascx" />
+    <Content Include="WebProfileBuilder.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\images\icons\Thumbs.db" />
+    <None Include="Views\Report\Generic.xsc">
+      <DependentUpon>Generic.xsd</DependentUpon>
+    </None>
+    <None Include="Views\Report\Generic.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Generic.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Report\Generic.xss">
+      <DependentUpon>Generic.xsd</DependentUpon>
+    </None>
+    <None Include="Views\Report\Paragraph.xsc">
+      <DependentUpon>Paragraph.xsd</DependentUpon>
+    </None>
+    <None Include="Views\Report\Paragraph.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Paragraph.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Report\Paragraph.xss">
+      <DependentUpon>Paragraph.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\SigTrade.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SigTrade.fr-FR.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\SigTrade.es-ES.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SigTrade.es-ES.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Content\CSS\jquery.autocomplete.css" />
+    <Content Include="Content\images\cluetip\arrowdown.gif" />
+    <Content Include="Content\images\cluetip\arrowleft.gif" />
+    <Content Include="Content\images\cluetip\arrowright.gif" />
+    <Content Include="Content\images\cluetip\arrowup.gif" />
+    <Content Include="Content\images\cluetip\bl.gif" />
+    <Content Include="Content\images\cluetip\bl.png" />
+    <Content Include="Content\images\cluetip\br.gif" />
+    <Content Include="Content\images\cluetip\br.png" />
+    <Content Include="Content\images\cluetip\darrowdown.gif" />
+    <Content Include="Content\images\cluetip\darrowleft.gif" />
+    <Content Include="Content\images\cluetip\darrowright.gif" />
+    <Content Include="Content\images\cluetip\darrowup.gif" />
+    <Content Include="Content\images\cluetip\itunes.png" />
+    <Content Include="Content\images\cluetip\rarrowdown.gif" />
+    <Content Include="Content\images\cluetip\rarrowleft.gif" />
+    <Content Include="Content\images\cluetip\rarrowright.gif" />
+    <Content Include="Content\images\cluetip\rarrowup.gif" />
+    <Content Include="Content\images\cluetip\tl.gif" />
+    <Content Include="Content\images\cluetip\tl.png" />
+    <Content Include="Content\images\cluetip\tr.gif" />
+    <Content Include="Content\images\cluetip\tr.png" />
+    <Content Include="Content\images\cluetip\wait.gif" />
+    <Content Include="Content\images\icons\accept.png" />
+    <Content Include="Content\images\icons\add.png" />
+    <Content Include="Content\images\icons\anchor.png" />
+    <Content Include="Content\images\icons\application.png" />
+    <Content Include="Content\images\icons\application_add.png" />
+    <Content Include="Content\images\icons\application_cascade.png" />
+    <Content Include="Content\images\icons\application_delete.png" />
+    <Content Include="Content\images\icons\application_double.png" />
+    <Content Include="Content\images\icons\application_edit.png" />
+    <Content Include="Content\images\icons\application_error.png" />
+    <Content Include="Content\images\icons\application_form.png" />
+    <Content Include="Content\images\icons\application_form_add.png" />
+    <Content Include="Content\images\icons\application_form_delete.png" />
+    <Content Include="Content\images\icons\application_form_edit.png" />
+    <Content Include="Content\images\icons\application_form_magnify.png" />
+    <Content Include="Content\images\icons\application_get.png" />
+    <Content Include="Content\images\icons\application_go.png" />
+    <Content Include="Content\images\icons\application_home.png" />
+    <Content Include="Content\images\icons\application_key.png" />
+    <Content Include="Content\images\icons\application_lightning.png" />
+    <Content Include="Content\images\icons\application_link.png" />
+    <Content Include="Content\images\icons\application_osx.png" />
+    <Content Include="Content\images\icons\application_osx_terminal.png" />
+    <Content Include="Content\images\icons\application_put.png" />
+    <Content Include="Content\images\icons\application_side_boxes.png" />
+    <Content Include="Content\images\icons\application_side_contract.png" />
+    <Content Include="Content\images\icons\application_side_expand.png" />
+    <Content Include="Content\images\icons\application_side_list.png" />
+    <Content Include="Content\images\icons\application_side_tree.png" />
+    <Content Include="Content\images\icons\application_split.png" />
+    <Content Include="Content\images\icons\application_tile_horizontal.png" />
+    <Content Include="Content\images\icons\application_tile_vertical.png" />
+    <Content Include="Content\images\icons\application_view_columns.png" />
+    <Content Include="Content\images\icons\application_view_detail.png" />
+    <Content Include="Content\images\icons\application_view_gallery.png" />
+    <Content Include="Content\images\icons\application_view_icons.png" />
+    <Content Include="Content\images\icons\application_view_list.png" />
+    <Content Include="Content\images\icons\application_view_tile.png" />
+    <Content Include="Content\images\icons\application_xp.png" />
+    <Content Include="Content\images\icons\application_xp_terminal.png" />
+    <Content Include="Content\images\icons\arrow_branch.png" />
+    <Content Include="Content\images\icons\arrow_divide.png" />
+    <Content Include="Content\images\icons\arrow_down.png" />
+    <Content Include="Content\images\icons\arrow_in.png" />
+    <Content Include="Content\images\icons\arrow_inout.png" />
+    <Content Include="Content\images\icons\arrow_join.png" />
+    <Content Include="Content\images\icons\arrow_left.png" />
+    <Content Include="Content\images\icons\arrow_merge.png" />
+    <Content Include="Content\images\icons\arrow_out.png" />
+    <Content Include="Content\images\icons\arrow_redo.png" />
+    <Content Include="Content\images\icons\arrow_refresh.png" />
+    <Content Include="Content\images\icons\arrow_refresh_small.png" />
+    <Content Include="Content\images\icons\arrow_right.png" />
+    <Content Include="Content\images\icons\arrow_rotate_anticlockwise.png" />
+    <Content Include="Content\images\icons\arrow_rotate_clockwise.png" />
+    <Content Include="Content\images\icons\arrow_switch.png" />
+    <Content Include="Content\images\icons\arrow_turn_left.png" />
+    <Content Include="Content\images\icons\arrow_turn_right.png" />
+    <Content Include="Content\images\icons\arrow_undo.png" />
+    <Content Include="Content\images\icons\arrow_up.png" />
+    <Content Include="Content\images\icons\asterisk_orange.png" />
+    <Content Include="Content\images\icons\asterisk_yellow.png" />
+    <Content Include="Content\images\icons\attach.png" />
+    <Content Include="Content\images\icons\award_star_add.png" />
+    <Content Include="Content\images\icons\award_star_bronze_1.png" />
+    <Content Include="Content\images\icons\award_star_bronze_2.png" />
+    <Content Include="Content\images\icons\award_star_bronze_3.png" />
+    <Content Include="Content\images\icons\award_star_delete.png" />
+    <Content Include="Content\images\icons\award_star_gold_1.png" />
+    <Content Include="Content\images\icons\award_star_gold_2.png" />
+    <Content Include="Content\images\icons\award_star_gold_3.png" />
+    <Content Include="Content\images\icons\award_star_silver_1.png" />
+    <Content Include="Content\images\icons\award_star_silver_2.png" />
+    <Content Include="Content\images\icons\award_star_silver_3.png" />
+    <Content Include="Content\images\icons\basket.png" />
+    <Content Include="Content\images\icons\basket_add.png" />
+    <Content Include="Content\images\icons\basket_delete.png" />
+    <Content Include="Content\images\icons\basket_edit.png" />
+    <Content Include="Content\images\icons\basket_error.png" />
+    <Content Include="Content\images\icons\basket_go.png" />
+    <Content Include="Content\images\icons\basket_put.png" />
+    <Content Include="Content\images\icons\basket_remove.png" />
+    <Content Include="Content\images\icons\bell.png" />
+    <Content Include="Content\images\icons\bell_add.png" />
+    <Content Include="Content\images\icons\bell_delete.png" />
+    <Content Include="Content\images\icons\bell_error.png" />
+    <Content Include="Content\images\icons\bell_go.png" />
+    <Content Include="Content\images\icons\bell_link.png" />
+    <Content Include="Content\images\icons\bin.png" />
+    <Content Include="Content\images\icons\bin_closed.png" />
+    <Content Include="Content\images\icons\bin_empty.png" />
+    <Content Include="Content\images\icons\bomb.png" />
+    <Content Include="Content\images\icons\book.png" />
+    <Content Include="Content\images\icons\book_add.png" />
+    <Content Include="Content\images\icons\book_addresses.png" />
+    <Content Include="Content\images\icons\book_delete.png" />
+    <Content Include="Content\images\icons\book_edit.png" />
+    <Content Include="Content\images\icons\book_error.png" />
+    <Content Include="Content\images\icons\book_go.png" />
+    <Content Include="Content\images\icons\book_key.png" />
+    <Content Include="Content\images\icons\book_link.png" />
+    <Content Include="Content\images\icons\book_next.png" />
+    <Content Include="Content\images\icons\book_open.png" />
+    <Content Include="Content\images\icons\book_previous.png" />
+    <Content Include="Content\images\icons\box.png" />
+    <Content Include="Content\images\icons\brick.png" />
+    <Content Include="Content\images\icons\bricks.png" />
+    <Content Include="Content\images\icons\brick_add.png" />
+    <Content Include="Content\images\icons\brick_delete.png" />
+    <Content Include="Content\images\icons\brick_edit.png" />
+    <Content Include="Content\images\icons\brick_error.png" />
+    <Content Include="Content\images\icons\brick_go.png" />
+    <Content Include="Content\images\icons\brick_link.png" />
+    <Content Include="Content\images\icons\briefcase.png" />
+    <Content Include="Content\images\icons\bug.png" />
+    <Content Include="Content\images\icons\bug_add.png" />
+    <Content Include="Content\images\icons\bug_delete.png" />
+    <Content Include="Content\images\icons\bug_edit.png" />
+    <Content Include="Content\images\icons\bug_error.png" />
+    <Content Include="Content\images\icons\bug_go.png" />
+    <Content Include="Content\images\icons\bug_link.png" />
+    <Content Include="Content\images\icons\building.png" />
+    <Content Include="Content\images\icons\building_add.png" />
+    <Content Include="Content\images\icons\building_delete.png" />
+    <Content Include="Content\images\icons\building_edit.png" />
+    <Content Include="Content\images\icons\building_error.png" />
+    <Content Include="Content\images\icons\building_go.png" />
+    <Content Include="Content\images\icons\building_key.png" />
+    <Content Include="Content\images\icons\building_link.png" />
+    <Content Include="Content\images\icons\bullet_add.png" />
+    <Content Include="Content\images\icons\bullet_arrow_bottom.png" />
+    <Content Include="Content\images\icons\bullet_arrow_down.png" />
+    <Content Include="Content\images\icons\bullet_arrow_top.png" />
+    <Content Include="Content\images\icons\bullet_arrow_up.png" />
+    <Content Include="Content\images\icons\bullet_black.png" />
+    <Content Include="Content\images\icons\bullet_blue.png" />
+    <Content Include="Content\images\icons\bullet_delete.png" />
+    <Content Include="Content\images\icons\bullet_disk.png" />
+    <Content Include="Content\images\icons\bullet_error.png" />
+    <Content Include="Content\images\icons\bullet_feed.png" />
+    <Content Include="Content\images\icons\bullet_go.png" />
+    <Content Include="Content\images\icons\bullet_green.png" />
+    <Content Include="Content\images\icons\bullet_key.png" />
+    <Content Include="Content\images\icons\bullet_orange.png" />
+    <Content Include="Content\images\icons\bullet_picture.png" />
+    <Content Include="Content\images\icons\bullet_pink.png" />
+    <Content Include="Content\images\icons\bullet_purple.png" />
+    <Content Include="Content\images\icons\bullet_red.png" />
+    <Content Include="Content\images\icons\bullet_star.png" />
+    <Content Include="Content\images\icons\bullet_toggle_minus.png" />
+    <Content Include="Content\images\icons\bullet_toggle_plus.png" />
+    <Content Include="Content\images\icons\bullet_white.png" />
+    <Content Include="Content\images\icons\bullet_wrench.png" />
+    <Content Include="Content\images\icons\bullet_yellow.png" />
+    <Content Include="Content\images\icons\cake.png" />
+    <Content Include="Content\images\icons\calculator.png" />
+    <Content Include="Content\images\icons\calculator_add.png" />
+    <Content Include="Content\images\icons\calculator_delete.png" />
+    <Content Include="Content\images\icons\calculator_edit.png" />
+    <Content Include="Content\images\icons\calculator_error.png" />
+    <Content Include="Content\images\icons\calculator_link.png" />
+    <Content Include="Content\images\icons\calendar.png" />
+    <Content Include="Content\images\icons\calendar_add.png" />
+    <Content Include="Content\images\icons\calendar_delete.png" />
+    <Content Include="Content\images\icons\calendar_edit.png" />
+    <Content Include="Content\images\icons\calendar_link.png" />
+    <Content Include="Content\images\icons\calendar_view_day.png" />
+    <Content Include="Content\images\icons\calendar_view_month.png" />
+    <Content Include="Content\images\icons\calendar_view_week.png" />
+    <Content Include="Content\images\icons\camera.png" />
+    <Content Include="Content\images\icons\camera_add.png" />
+    <Content Include="Content\images\icons\camera_delete.png" />
+    <Content Include="Content\images\icons\camera_edit.png" />
+    <Content Include="Content\images\icons\camera_error.png" />
+    <Content Include="Content\images\icons\camera_go.png" />
+    <Content Include="Content\images\icons\camera_link.png" />
+    <Content Include="Content\images\icons\camera_small.png" />
+    <Content Include="Content\images\icons\cancel.png" />
+    <Content Include="Content\images\icons\car.png" />
+    <Content Include="Content\images\icons\cart.png" />
+    <Content Include="Content\images\icons\cart_add.png" />
+    <Content Include="Content\images\icons\cart_delete.png" />
+    <Content Include="Content\images\icons\cart_edit.png" />
+    <Content Include="Content\images\icons\cart_error.png" />
+    <Content Include="Content\images\icons\cart_go.png" />
+    <Content Include="Content\images\icons\cart_put.png" />
+    <Content Include="Content\images\icons\cart_remove.png" />
+    <Content Include="Content\images\icons\car_add.png" />
+    <Content Include="Content\images\icons\car_delete.png" />
+    <Content Include="Content\images\icons\cd.png" />
+    <Content Include="Content\images\icons\cd_add.png" />
+    <Content Include="Content\images\icons\cd_burn.png" />
+    <Content Include="Content\images\icons\cd_delete.png" />
+    <Content Include="Content\images\icons\cd_edit.png" />
+    <Content Include="Content\images\icons\cd_eject.png" />
+    <Content Include="Content\images\icons\cd_go.png" />
+    <Content Include="Content\images\icons\chart_bar.png" />
+    <Content Include="Content\images\icons\chart_bar_add.png" />
+    <Content Include="Content\images\icons\chart_bar_delete.png" />
+    <Content Include="Content\images\icons\chart_bar_edit.png" />
+    <Content Include="Content\images\icons\chart_bar_error.png" />
+    <Content Include="Content\images\icons\chart_bar_link.png" />
+    <Content Include="Content\images\icons\chart_curve.png" />
+    <Content Include="Content\images\icons\chart_curve_add.png" />
+    <Content Include="Content\images\icons\chart_curve_delete.png" />
+    <Content Include="Content\images\icons\chart_curve_edit.png" />
+    <Content Include="Content\images\icons\chart_curve_error.png" />
+    <Content Include="Content\images\icons\chart_curve_go.png" />
+    <Content Include="Content\images\icons\chart_curve_link.png" />
+    <Content Include="Content\images\icons\chart_line.png" />
+    <Content Include="Content\images\icons\chart_line_add.png" />
+    <Content Include="Content\images\icons\chart_line_delete.png" />
+    <Content Include="Content\images\icons\chart_line_edit.png" />
+    <Content Include="Content\images\icons\chart_line_error.png" />
+    <Content Include="Content\images\icons\chart_line_link.png" />
+    <Content Include="Content\images\icons\chart_organisation.png" />
+    <Content Include="Content\images\icons\chart_organisation_add.png" />
+    <Content Include="Content\images\icons\chart_organisation_delete.png" />
+    <Content Include="Content\images\icons\chart_pie.png" />
+    <Content Include="Content\images\icons\chart_pie_add.png" />
+    <Content Include="Content\images\icons\chart_pie_delete.png" />
+    <Content Include="Content\images\icons\chart_pie_edit.png" />
+    <Content Include="Content\images\icons\chart_pie_error.png" />
+    <Content Include="Content\images\icons\chart_pie_link.png" />
+    <Content Include="Content\images\icons\clock.png" />
+    <Content Include="Content\images\icons\clock_add.png" />
+    <Content Include="Content\images\icons\clock_delete.png" />
+    <Content Include="Content\images\icons\clock_edit.png" />
+    <Content Include="Content\images\icons\clock_error.png" />
+    <Content Include="Content\images\icons\clock_go.png" />
+    <Content Include="Content\images\icons\clock_link.png" />
+    <Content Include="Content\images\icons\clock_pause.png" />
+    <Content Include="Content\images\icons\clock_play.png" />
+    <Content Include="Content\images\icons\clock_red.png" />
+    <Content Include="Content\images\icons\clock_stop.png" />
+    <Content Include="Content\images\icons\cog.png" />
+    <Content Include="Content\images\icons\cog_add.png" />
+    <Content Include="Content\images\icons\cog_delete.png" />
+    <Content Include="Content\images\icons\cog_edit.png" />
+    <Content Include="Content\images\icons\cog_error.png" />
+    <Content Include="Content\images\icons\cog_go.png" />
+    <Content Include="Content\images\icons\coins.png" />
+    <Content Include="Content\images\icons\coins_add.png" />
+    <Content Include="Content\images\icons\coins_delete.png" />
+    <Content Include="Content\images\icons\color_swatch.png" />
+    <Content Include="Content\images\icons\color_wheel.png" />
+    <Content Include="Content\images\icons\comment.png" />
+    <Content Include="Content\images\icons\comments.png" />
+    <Content Include="Content\images\icons\comments_add.png" />
+    <Content Include="Content\images\icons\comments_delete.png" />
+    <Content Include="Content\images\icons\comment_add.png" />
+    <Content Include="Content\images\icons\comment_delete.png" />
+    <Content Include="Content\images\icons\comment_edit.png" />
+    <Content Include="Content\images\icons\compress.png" />
+    <Content Include="Content\images\icons\computer.png" />
+    <Content Include="Content\images\icons\computer_add.png" />
+    <Content Include="Content\images\icons\computer_delete.png" />
+    <Content Include="Content\images\icons\computer_edit.png" />
+    <Content Include="Content\images\icons\computer_error.png" />
+    <Content Include="Content\images\icons\computer_go.png" />
+    <Content Include="Content\images\icons\computer_key.png" />
+    <Content Include="Content\images\icons\computer_link.png" />
+    <Content Include="Content\images\icons\connect.png" />
+    <Content Include="Content\images\icons\contrast.png" />
+    <Content Include="Content\images\icons\contrast_decrease.png" />
+    <Content Include="Content\images\icons\contrast_high.png" />
+    <Content Include="Content\images\icons\contrast_increase.png" />
+    <Content Include="Content\images\icons\contrast_low.png" />
+    <Content Include="Content\images\icons\controller.png" />
+    <Content Include="Content\images\icons\controller_add.png" />
+    <Content Include="Content\images\icons\controller_delete.png" />
+    <Content Include="Content\images\icons\controller_error.png" />
+    <Content Include="Content\images\icons\control_eject.png" />
+    <Content Include="Content\images\icons\control_eject_blue.png" />
+    <Content Include="Content\images\icons\control_end.png" />
+    <Content Include="Content\images\icons\control_end_blue.png" />
+    <Content Include="Content\images\icons\control_equalizer.png" />
+    <Content Include="Content\images\icons\control_equalizer_blue.png" />
+    <Content Include="Content\images\icons\control_fastforward.png" />
+    <Content Include="Content\images\icons\control_fastforward_blue.png" />
+    <Content Include="Content\images\icons\control_pause.png" />
+    <Content Include="Content\images\icons\control_pause_blue.png" />
+    <Content Include="Content\images\icons\control_play.png" />
+    <Content Include="Content\images\icons\control_play_blue.png" />
+    <Content Include="Content\images\icons\control_repeat.png" />
+    <Content Include="Content\images\icons\control_repeat_blue.png" />
+    <Content Include="Content\images\icons\control_rewind.png" />
+    <Content Include="Content\images\icons\control_rewind_blue.png" />
+    <Content Include="Content\images\icons\control_start.png" />
+    <Content Include="Content\images\icons\control_start_blue.png" />
+    <Content Include="Content\images\icons\control_stop.png" />
+    <Content Include="Content\images\icons\control_stop_blue.png" />
+    <Content Include="Content\images\icons\creditcards.png" />
+    <Content Include="Content\images\icons\cross.png" />
+    <Content Include="Content\images\icons\css.png" />
+    <Content Include="Content\images\icons\css_add.png" />
+    <Content Include="Content\images\icons\css_delete.png" />
+    <Content Include="Content\images\icons\css_go.png" />
+    <Content Include="Content\images\icons\css_valid.png" />
+    <Content Include="Content\images\icons\cup.png" />
+    <Content Include="Content\images\icons\cup_add.png" />
+    <Content Include="Content\images\icons\cup_delete.png" />
+    <Content Include="Content\images\icons\cup_edit.png" />
+    <Content Include="Content\images\icons\cup_error.png" />
+    <Content Include="Content\images\icons\cup_go.png" />
+    <Content Include="Content\images\icons\cup_key.png" />
+    <Content Include="Content\images\icons\cup_link.png" />
+    <Content Include="Content\images\icons\cursor.png" />
+    <Content Include="Content\images\icons\cut.png" />
+    <Content Include="Content\images\icons\cut_red.png" />
+    <Content Include="Content\images\icons\database.png" />
+    <Content Include="Content\images\icons\database_add.png" />
+    <Content Include="Content\images\icons\database_connect.png" />
+    <Content Include="Content\images\icons\database_delete.png" />
+    <Content Include="Content\images\icons\database_edit.png" />
+    <Content Include="Content\images\icons\database_error.png" />
+    <Content Include="Content\images\icons\database_gear.png" />
+    <Content Include="Content\images\icons\database_go.png" />
+    <Content Include="Content\images\icons\database_key.png" />
+    <Content Include="Content\images\icons\database_lightning.png" />
+    <Content Include="Content\images\icons\database_link.png" />
+    <Content Include="Content\images\icons\database_refresh.png" />
+    <Content Include="Content\images\icons\database_save.png" />
+    <Content Include="Content\images\icons\database_table.png" />
+    <Content Include="Content\images\icons\date.png" />
+    <Content Include="Content\images\icons\date_add.png" />
+    <Content Include="Content\images\icons\date_delete.png" />
+    <Content Include="Content\images\icons\date_edit.png" />
+    <Content Include="Content\images\icons\date_error.png" />
+    <Content Include="Content\images\icons\date_go.png" />
+    <Content Include="Content\images\icons\date_link.png" />
+    <Content Include="Content\images\icons\date_magnify.png" />
+    <Content Include="Content\images\icons\date_next.png" />
+    <Content Include="Content\images\icons\date_previous.png" />
+    <Content Include="Content\images\icons\delete.png" />
+    <Content Include="Content\images\icons\disconnect.png" />
+    <Content Include="Content\images\icons\disk.png" />
+    <Content Include="Content\images\icons\disk_multiple.png" />
+    <Content Include="Content\images\icons\door.png" />
+    <Content Include="Content\images\icons\door_in.png" />
+    <Content Include="Content\images\icons\door_open.png" />
+    <Content Include="Content\images\icons\door_out.png" />
+    <Content Include="Content\images\icons\drink.png" />
+    <Content Include="Content\images\icons\drink_empty.png" />
+    <Content Include="Content\images\icons\drive.png" />
+    <Content Include="Content\images\icons\drive_add.png" />
+    <Content Include="Content\images\icons\drive_burn.png" />
+    <Content Include="Content\images\icons\drive_cd.png" />
+    <Content Include="Content\images\icons\drive_cd_empty.png" />
+    <Content Include="Content\images\icons\drive_delete.png" />
+    <Content Include="Content\images\icons\drive_disk.png" />
+    <Content Include="Content\images\icons\drive_edit.png" />
+    <Content Include="Content\images\icons\drive_error.png" />
+    <Content Include="Content\images\icons\drive_go.png" />
+    <Content Include="Content\images\icons\drive_key.png" />
+    <Content Include="Content\images\icons\drive_link.png" />
+    <Content Include="Content\images\icons\drive_magnify.png" />
+    <Content Include="Content\images\icons\drive_network.png" />
+    <Content Include="Content\images\icons\drive_rename.png" />
+    <Content Include="Content\images\icons\drive_user.png" />
+    <Content Include="Content\images\icons\drive_web.png" />
+    <Content Include="Content\images\icons\dvd.png" />
+    <Content Include="Content\images\icons\dvd_add.png" />
+    <Content Include="Content\images\icons\dvd_delete.png" />
+    <Content Include="Content\images\icons\dvd_edit.png" />
+    <Content Include="Content\images\icons\dvd_error.png" />
+    <Content Include="Content\images\icons\dvd_go.png" />
+    <Content Include="Content\images\icons\dvd_key.png" />
+    <Content Include="Content\images\icons\dvd_link.png" />
+    <Content Include="Content\images\icons\email.png" />
+    <Content Include="Content\images\icons\email_add.png" />
+    <Content Include="Content\images\icons\email_attach.png" />
+    <Content Include="Content\images\icons\email_delete.png" />
+    <Content Include="Content\images\icons\email_edit.png" />
+    <Content Include="Content\images\icons\email_error.png" />
+    <Content Include="Content\images\icons\email_go.png" />
+    <Content Include="Content\images\icons\email_link.png" />
+    <Content Include="Content\images\icons\email_open.png" />
+    <Content Include="Content\images\icons\email_open_image.png" />
+    <Content Include="Content\images\icons\emoticon_evilgrin.png" />
+    <Content Include="Content\images\icons\emoticon_grin.png" />
+    <Content Include="Content\images\icons\emoticon_happy.png" />
+    <Content Include="Content\images\icons\emoticon_smile.png" />
+    <Content Include="Content\images\icons\emoticon_surprised.png" />
+    <Content Include="Content\images\icons\emoticon_tongue.png" />
+    <Content Include="Content\images\icons\emoticon_unhappy.png" />
+    <Content Include="Content\images\icons\emoticon_waii.png" />
+    <Content Include="Content\images\icons\emoticon_wink.png" />
+    <Content Include="Content\images\icons\error.png" />
+    <Content Include="Content\images\icons\error_add.png" />
+    <Content Include="Content\images\icons\error_delete.png" />
+    <Content Include="Content\images\icons\error_go.png" />
+    <Content Include="Content\images\icons\exclamation.png" />
+    <Content Include="Content\images\icons\eye.png" />
+    <Content Include="Content\images\icons\feed.png" />
+    <Content Include="Content\images\icons\feed_add.png" />
+    <Content Include="Content\images\icons\feed_delete.png" />
+    <Content Include="Content\images\icons\feed_disk.png" />
+    <Content Include="Content\images\icons\feed_edit.png" />
+    <Content Include="Content\images\icons\feed_error.png" />
+    <Content Include="Content\images\icons\feed_go.png" />
+    <Content Include="Content\images\icons\feed_key.png" />
+    <Content Include="Content\images\icons\feed_link.png" />
+    <Content Include="Content\images\icons\feed_magnify.png" />
+    <Content Include="Content\images\icons\female.png" />
+    <Content Include="Content\images\icons\film.png" />
+    <Content Include="Content\images\icons\film_add.png" />
+    <Content Include="Content\images\icons\film_delete.png" />
+    <Content Include="Content\images\icons\film_edit.png" />
+    <Content Include="Content\images\icons\film_error.png" />
+    <Content Include="Content\images\icons\film_go.png" />
+    <Content Include="Content\images\icons\film_key.png" />
+    <Content Include="Content\images\icons\film_link.png" />
+    <Content Include="Content\images\icons\film_save.png" />
+    <Content Include="Content\images\icons\find.png" />
+    <Content Include="Content\images\icons\flag_blue.png" />
+    <Content Include="Content\images\icons\flag_green.png" />
+    <Content Include="Content\images\icons\flag_orange.png" />
+    <Content Include="Content\images\icons\flag_pink.png" />
+    <Content Include="Content\images\icons\flag_purple.png" />
+    <Content Include="Content\images\icons\flag_red.png" />
+    <Content Include="Content\images\icons\flag_yellow.png" />
+    <Content Include="Content\images\icons\folder.png" />
+    <Content Include="Content\images\icons\folder_add.png" />
+    <Content Include="Content\images\icons\folder_bell.png" />
+    <Content Include="Content\images\icons\folder_brick.png" />
+    <Content Include="Content\images\icons\folder_bug.png" />
+    <Content Include="Content\images\icons\folder_camera.png" />
+    <Content Include="Content\images\icons\folder_database.png" />
+    <Content Include="Content\images\icons\folder_delete.png" />
+    <Content Include="Content\images\icons\folder_edit.png" />
+    <Content Include="Content\images\icons\folder_error.png" />
+    <Content Include="Content\images\icons\folder_explore.png" />
+    <Content Include="Content\images\icons\folder_feed.png" />
+    <Content Include="Content\images\icons\folder_find.png" />
+    <Content Include="Content\images\icons\folder_go.png" />
+    <Content Include="Content\images\icons\folder_heart.png" />
+    <Content Include="Content\images\icons\folder_image.png" />
+    <Content Include="Content\images\icons\folder_key.png" />
+    <Content Include="Content\images\icons\folder_lightbulb.png" />
+    <Content Include="Content\images\icons\folder_link.png" />
+    <Content Include="Content\images\icons\folder_magnify.png" />
+    <Content Include="Content\images\icons\folder_page.png" />
+    <Content Include="Content\images\icons\folder_page_white.png" />
+    <Content Include="Content\images\icons\folder_palette.png" />
+    <Content Include="Content\images\icons\folder_picture.png" />
+    <Content Include="Content\images\icons\folder_star.png" />
+    <Content Include="Content\images\icons\folder_table.png" />
+    <Content Include="Content\images\icons\folder_user.png" />
+    <Content Include="Content\images\icons\folder_wrench.png" />
+    <Content Include="Content\images\icons\font.png" />
+    <Content Include="Content\images\icons\font_add.png" />
+    <Content Include="Content\images\icons\font_delete.png" />
+    <Content Include="Content\images\icons\font_go.png" />
+    <Content Include="Content\images\icons\group.png" />
+    <Content Include="Content\images\icons\group_add.png" />
+    <Content Include="Content\images\icons\group_delete.png" />
+    <Content Include="Content\images\icons\group_edit.png" />
+    <Content Include="Content\images\icons\group_error.png" />
+    <Content Include="Content\images\icons\group_gear.png" />
+    <Content Include="Content\images\icons\group_go.png" />
+    <Content Include="Content\images\icons\group_key.png" />
+    <Content Include="Content\images\icons\group_link.png" />
+    <Content Include="Content\images\icons\heart.png" />
+    <Content Include="Content\images\icons\heart_add.png" />
+    <Content Include="Content\images\icons\heart_delete.png" />
+    <Content Include="Content\images\icons\help.png" />
+    <Content Include="Content\images\icons\hourglass.png" />
+    <Content Include="Content\images\icons\hourglass_add.png" />
+    <Content Include="Content\images\icons\hourglass_delete.png" />
+    <Content Include="Content\images\icons\hourglass_go.png" />
+    <Content Include="Content\images\icons\hourglass_link.png" />
+    <Content Include="Content\images\icons\house.png" />
+    <Content Include="Content\images\icons\house_go.png" />
+    <Content Include="Content\images\icons\house_link.png" />
+    <Content Include="Content\images\icons\html.png" />
+    <Content Include="Content\images\icons\html_add.png" />
+    <Content Include="Content\images\icons\html_delete.png" />
+    <Content Include="Content\images\icons\html_go.png" />
+    <Content Include="Content\images\icons\html_valid.png" />
+    <Content Include="Content\images\icons\image.png" />
+    <Content Include="Content\images\icons\images.png" />
+    <Content Include="Content\images\icons\image_add.png" />
+    <Content Include="Content\images\icons\image_delete.png" />
+    <Content Include="Content\images\icons\image_edit.png" />
+    <Content Include="Content\images\icons\image_link.png" />
+    <Content Include="Content\images\icons\information.png" />
+    <Content Include="Content\images\icons\ipod.png" />
+    <Content Include="Content\images\icons\ipod_cast.png" />
+    <Content Include="Content\images\icons\ipod_cast_add.png" />
+    <Content Include="Content\images\icons\ipod_cast_delete.png" />
+    <Content Include="Content\images\icons\ipod_sound.png" />
+    <Content Include="Content\images\icons\joystick.png" />
+    <Content Include="Content\images\icons\joystick_add.png" />
+    <Content Include="Content\images\icons\joystick_delete.png" />
+    <Content Include="Content\images\icons\joystick_error.png" />
+    <Content Include="Content\images\icons\key.png" />
+    <Content Include="Content\images\icons\keyboard.png" />
+    <Content Include="Content\images\icons\keyboard_add.png" />
+    <Content Include="Content\images\icons\keyboard_delete.png" />
+    <Content Include="Content\images\icons\keyboard_magnify.png" />
+    <Content Include="Content\images\icons\key_add.png" />
+    <Content Include="Content\images\icons\key_delete.png" />
+    <Content Include="Content\images\icons\key_go.png" />
+    <Content Include="Content\images\icons\layers.png" />
+    <Content Include="Content\images\icons\layout.png" />
+    <Content Include="Content\images\icons\layout_add.png" />
+    <Content Include="Content\images\icons\layout_content.png" />
+    <Content Include="Content\images\icons\layout_delete.png" />
+    <Content Include="Content\images\icons\layout_edit.png" />
+    <Content Include="Content\images\icons\layout_error.png" />
+    <Content Include="Content\images\icons\layout_header.png" />
+    <Content Include="Content\images\icons\layout_link.png" />
+    <Content Include="Content\images\icons\layout_sidebar.png" />
+    <Content Include="Content\images\icons\lightbulb.png" />
+    <Content Include="Content\images\icons\lightbulb_add.png" />
+    <Content Include="Content\images\icons\lightbulb_delete.png" />
+    <Content Include="Content\images\icons\lightbulb_off.png" />
+    <Content Include="Content\images\icons\lightning.png" />
+    <Content Include="Content\images\icons\lightning_add.png" />
+    <Content Include="Content\images\icons\lightning_delete.png" />
+    <Content Include="Content\images\icons\lightning_go.png" />
+    <Content Include="Content\images\icons\link.png" />
+    <Content Include="Content\images\icons\link_add.png" />
+    <Content Include="Content\images\icons\link_break.png" />
+    <Content Include="Content\images\icons\link_delete.png" />
+    <Content Include="Content\images\icons\link_edit.png" />
+    <Content Include="Content\images\icons\link_error.png" />
+    <Content Include="Content\images\icons\link_go.png" />
+    <Content Include="Content\images\icons\lock.png" />
+    <Content Include="Content\images\icons\lock_add.png" />
+    <Content Include="Content\images\icons\lock_break.png" />
+    <Content Include="Content\images\icons\lock_delete.png" />
+    <Content Include="Content\images\icons\lock_edit.png" />
+    <Content Include="Content\images\icons\lock_go.png" />
+    <Content Include="Content\images\icons\lock_open.png" />
+    <Content Include="Content\images\icons\lorry.png" />
+    <Content Include="Content\images\icons\lorry_add.png" />
+    <Content Include="Content\images\icons\lorry_delete.png" />
+    <Content Include="Content\images\icons\lorry_error.png" />
+    <Content Include="Content\images\icons\lorry_flatbed.png" />
+    <Content Include="Content\images\icons\lorry_go.png" />
+    <Content Include="Content\images\icons\lorry_link.png" />
+    <Content Include="Content\images\icons\magifier_zoom_out.png" />
+    <Content Include="Content\images\icons\magnifier.png" />
+    <Content Include="Content\images\icons\magnifier_zoom_in.png" />
+    <Content Include="Content\images\icons\male.png" />
+    <Content Include="Content\images\icons\map.png" />
+    <Content Include="Content\images\icons\map_add.png" />
+    <Content Include="Content\images\icons\map_delete.png" />
+    <Content Include="Content\images\icons\map_edit.png" />
+    <Content Include="Content\images\icons\map_go.png" />
+    <Content Include="Content\images\icons\map_magnify.png" />
+    <Content Include="Content\images\icons\medal_bronze_1.png" />
+    <Content Include="Content\images\icons\medal_bronze_2.png" />
+    <Content Include="Content\images\icons\medal_bronze_3.png" />
+    <Content Include="Content\images\icons\medal_bronze_add.png" />
+    <Content Include="Content\images\icons\medal_bronze_delete.png" />
+    <Content Include="Content\images\icons\medal_gold_1.png" />
+    <Content Include="Content\images\icons\medal_gold_2.png" />
+    <Content Include="Content\images\icons\medal_gold_3.png" />
+    <Content Include="Content\images\icons\medal_gold_add.png" />
+    <Content Include="Content\images\icons\medal_gold_delete.png" />
+    <Content Include="Content\images\icons\medal_silver_1.png" />
+    <Content Include="Content\images\icons\medal_silver_2.png" />
+    <Content Include="Content\images\icons\medal_silver_3.png" />
+    <Content Include="Content\images\icons\medal_silver_add.png" />
+    <Content Include="Content\images\icons\medal_silver_delete.png" />
+    <Content Include="Content\images\icons\money.png" />
+    <Content Include="Content\images\icons\money_add.png" />
+    <Content Include="Content\images\icons\money_delete.png" />
+    <Content Include="Content\images\icons\money_dollar.png" />
+    <Content Include="Content\images\icons\money_euro.png" />
+    <Content Include="Content\images\icons\money_pound.png" />
+    <Content Include="Content\images\icons\money_yen.png" />
+    <Content Include="Content\images\icons\monitor.png" />
+    <Content Include="Content\images\icons\monitor_add.png" />
+    <Content Include="Content\images\icons\monitor_delete.png" />
+    <Content Include="Content\images\icons\monitor_edit.png" />
+    <Content Include="Content\images\icons\monitor_error.png" />
+    <Content Include="Content\images\icons\monitor_go.png" />
+    <Content Include="Content\images\icons\monitor_lightning.png" />
+    <Content Include="Content\images\icons\monitor_link.png" />
+    <Content Include="Content\images\icons\mouse.png" />
+    <Content Include="Content\images\icons\mouse_add.png" />
+    <Content Include="Content\images\icons\mouse_delete.png" />
+    <Content Include="Content\images\icons\mouse_error.png" />
+    <Content Include="Content\images\icons\music.png" />
+    <Content Include="Content\images\icons\new.png" />
+    <Content Include="Content\images\icons\newspaper.png" />
+    <Content Include="Content\images\icons\newspaper_add.png" />
+    <Content Include="Content\images\icons\newspaper_delete.png" />
+    <Content Include="Content\images\icons\newspaper_go.png" />
+    <Content Include="Content\images\icons\newspaper_link.png" />
+    <Content Include="Content\images\icons\note.png" />
+    <Content Include="Content\images\icons\note_add.png" />
+    <Content Include="Content\images\icons\note_delete.png" />
+    <Content Include="Content\images\icons\note_edit.png" />
+    <Content Include="Content\images\icons\note_error.png" />
+    <Content Include="Content\images\icons\note_go.png" />
+    <Content Include="Content\images\icons\overlays.png" />
+    <Content Include="Content\images\icons\package.png" />
+    <Content Include="Content\images\icons\package_add.png" />
+    <Content Include="Content\images\icons\package_delete.png" />
+    <Content Include="Content\images\icons\package_go.png" />
+    <Content Include="Content\images\icons\package_green.png" />
+    <Content Include="Content\images\icons\package_link.png" />
+    <Content Include="Content\images\icons\page.png" />
+    <Content Include="Content\images\icons\page_add.png" />
+    <Content Include="Content\images\icons\page_attach.png" />
+    <Content Include="Content\images\icons\page_code.png" />
+    <Content Include="Content\images\icons\page_copy.png" />
+    <Content Include="Content\images\icons\page_delete.png" />
+    <Content Include="Content\images\icons\page_edit.png" />
+    <Content Include="Content\images\icons\page_error.png" />
+    <Content Include="Content\images\icons\page_excel.png" />
+    <Content Include="Content\images\icons\page_find.png" />
+    <Content Include="Content\images\icons\page_gear.png" />
+    <Content Include="Content\images\icons\page_go.png" />
+    <Content Include="Content\images\icons\page_green.png" />
+    <Content Include="Content\images\icons\page_key.png" />
+    <Content Include="Content\images\icons\page_lightning.png" />
+    <Content Include="Content\images\icons\page_link.png" />
+    <Content Include="Content\images\icons\page_paintbrush.png" />
+    <Content Include="Content\images\icons\page_paste.png" />
+    <Content Include="Content\images\icons\page_red.png" />
+    <Content Include="Content\images\icons\page_refresh.png" />
+    <Content Include="Content\images\icons\page_save.png" />
+    <Content Include="Content\images\icons\page_white.png" />
+    <Content Include="Content\images\icons\page_white_acrobat.png" />
+    <Content Include="Content\images\icons\page_white_actionscript.png" />
+    <Content Include="Content\images\icons\page_white_add.png" />
+    <Content Include="Content\images\icons\page_white_c.png" />
+    <Content Include="Content\images\icons\page_white_camera.png" />
+    <Content Include="Content\images\icons\page_white_cd.png" />
+    <Content Include="Content\images\icons\page_white_code.png" />
+    <Content Include="Content\images\icons\page_white_code_red.png" />
+    <Content Include="Content\images\icons\page_white_coldfusion.png" />
+    <Content Include="Content\images\icons\page_white_compressed.png" />
+    <Content Include="Content\images\icons\page_white_copy.png" />
+    <Content Include="Content\images\icons\page_white_cplusplus.png" />
+    <Content Include="Content\images\icons\page_white_csharp.png" />
+    <Content Include="Content\images\icons\page_white_cup.png" />
+    <Content Include="Content\images\icons\page_white_database.png" />
+    <Content Include="Content\images\icons\page_white_delete.png" />
+    <Content Include="Content\images\icons\page_white_dvd.png" />
+    <Content Include="Content\images\icons\page_white_edit.png" />
+    <Content Include="Content\images\icons\page_white_error.png" />
+    <Content Include="Content\images\icons\page_white_excel.png" />
+    <Content Include="Content\images\icons\page_white_find.png" />
+    <Content Include="Content\images\icons\page_white_flash.png" />
+    <Content Include="Content\images\icons\page_white_freehand.png" />
+    <Content Include="Content\images\icons\page_white_gear.png" />
+    <Content Include="Content\images\icons\page_white_get.png" />
+    <Content Include="Content\images\icons\page_white_go.png" />
+    <Content Include="Content\images\icons\page_white_h.png" />
+    <Content Include="Content\images\icons\page_white_horizontal.png" />
+    <Content Include="Content\images\icons\page_white_key.png" />
+    <Content Include="Content\images\icons\page_white_lightning.png" />
+    <Content Include="Content\images\icons\page_white_link.png" />
+    <Content Include="Content\images\icons\page_white_magnify.png" />
+    <Content Include="Content\images\icons\page_white_medal.png" />
+    <Content Include="Content\images\icons\page_white_office.png" />
+    <Content Include="Content\images\icons\page_white_paint.png" />
+    <Content Include="Content\images\icons\page_white_paintbrush.png" />
+    <Content Include="Content\images\icons\page_white_paste.png" />
+    <Content Include="Content\images\icons\page_white_php.png" />
+    <Content Include="Content\images\icons\page_white_picture.png" />
+    <Content Include="Content\images\icons\page_white_powerpoint.png" />
+    <Content Include="Content\images\icons\page_white_put.png" />
+    <Content Include="Content\images\icons\page_white_ruby.png" />
+    <Content Include="Content\images\icons\page_white_stack.png" />
+    <Content Include="Content\images\icons\page_white_star.png" />
+    <Content Include="Content\images\icons\page_white_swoosh.png" />
+    <Content Include="Content\images\icons\page_white_text.png" />
+    <Content Include="Content\images\icons\page_white_text_width.png" />
+    <Content Include="Content\images\icons\page_white_tux.png" />
+    <Content Include="Content\images\icons\page_white_vector.png" />
+    <Content Include="Content\images\icons\page_white_visualstudio.png" />
+    <Content Include="Content\images\icons\page_white_width.png" />
+    <Content Include="Content\images\icons\page_white_word.png" />
+    <Content Include="Content\images\icons\page_white_world.png" />
+    <Content Include="Content\images\icons\page_white_wrench.png" />
+    <Content Include="Content\images\icons\page_white_zip.png" />
+    <Content Include="Content\images\icons\page_word.png" />
+    <Content Include="Content\images\icons\page_world.png" />
+    <Content Include="Content\images\icons\paintbrush.png" />
+    <Content Include="Content\images\icons\paintcan.png" />
+    <Content Include="Content\images\icons\palette.png" />
+    <Content Include="Content\images\icons\paste_plain.png" />
+    <Content Include="Content\images\icons\paste_word.png" />
+    <Content Include="Content\images\icons\pencil.png" />
+    <Content Include="Content\images\icons\pencil_add.png" />
+    <Content Include="Content\images\icons\pencil_delete.png" />
+    <Content Include="Content\images\icons\pencil_go.png" />
+    <Content Include="Content\images\icons\phone.png" />
+    <Content Include="Content\images\icons\phone_add.png" />
+    <Content Include="Content\images\icons\phone_delete.png" />
+    <Content Include="Content\images\icons\phone_sound.png" />
+    <Content Include="Content\images\icons\photo.png" />
+    <Content Include="Content\images\icons\photos.png" />
+    <Content Include="Content\images\icons\photo_add.png" />
+    <Content Include="Content\images\icons\photo_delete.png" />
+    <Content Include="Content\images\icons\photo_link.png" />
+    <Content Include="Content\images\icons\picture.png" />
+    <Content Include="Content\images\icons\pictures.png" />
+    <Content Include="Content\images\icons\picture_add.png" />
+    <Content Include="Content\images\icons\picture_delete.png" />
+    <Content Include="Content\images\icons\picture_edit.png" />
+    <Content Include="Content\images\icons\picture_empty.png" />
+    <Content Include="Content\images\icons\picture_error.png" />
+    <Content Include="Content\images\icons\picture_go.png" />
+    <Content Include="Content\images\icons\picture_key.png" />
+    <Content Include="Content\images\icons\picture_link.png" />
+    <Content Include="Content\images\icons\picture_save.png" />
+    <Content Include="Content\images\icons\pilcrow.png" />
+    <Content Include="Content\images\icons\pill.png" />
+    <Content Include="Content\images\icons\pill_add.png" />
+    <Content Include="Content\images\icons\pill_delete.png" />
+    <Content Include="Content\images\icons\pill_go.png" />
+    <Content Include="Content\images\icons\plugin.png" />
+    <Content Include="Content\images\icons\plugin_add.png" />
+    <Content Include="Content\images\icons\plugin_delete.png" />
+    <Content Include="Content\images\icons\plugin_disabled.png" />
+    <Content Include="Content\images\icons\plugin_edit.png" />
+    <Content Include="Content\images\icons\plugin_error.png" />
+    <Content Include="Content\images\icons\plugin_go.png" />
+    <Content Include="Content\images\icons\plugin_link.png" />
+    <Content Include="Content\images\icons\printer.png" />
+    <Content Include="Content\images\icons\printer_add.png" />
+    <Content Include="Content\images\icons\printer_delete.png" />
+    <Content Include="Content\images\icons\printer_empty.png" />
+    <Content Include="Content\images\icons\printer_error.png" />
+    <Content Include="Content\images\icons\rainbow.png" />
+    <Content Include="Content\images\icons\report.png" />
+    <Content Include="Content\images\icons\report_add.png" />
+    <Content Include="Content\images\icons\report_delete.png" />
+    <Content Include="Content\images\icons\report_disk.png" />
+    <Content Include="Content\images\icons\report_edit.png" />
+    <Content Include="Content\images\icons\report_go.png" />
+    <Content Include="Content\images\icons\report_key.png" />
+    <Content Include="Content\images\icons\report_link.png" />
+    <Content Include="Content\images\icons\report_magnify.png" />
+    <Content Include="Content\images\icons\report_picture.png" />
+    <Content Include="Content\images\icons\report_user.png" />
+    <Content Include="Content\images\icons\report_word.png" />
+    <Content Include="Content\images\icons\resultset_first.png" />
+    <Content Include="Content\images\icons\resultset_last.png" />
+    <Content Include="Content\images\icons\resultset_next.png" />
+    <Content Include="Content\images\icons\resultset_previous.png" />
+    <Content Include="Content\images\icons\rosette.png" />
+    <Content Include="Content\images\icons\rss.png" />
+    <Content Include="Content\images\icons\rss_add.png" />
+    <Content Include="Content\images\icons\rss_delete.png" />
+    <Content Include="Content\images\icons\rss_go.png" />
+    <Content Include="Content\images\icons\rss_valid.png" />
+    <Content Include="Content\images\icons\ruby.png" />
+    <Content Include="Content\images\icons\ruby_add.png" />
+    <Content Include="Content\images\icons\ruby_delete.png" />
+    <Content Include="Content\images\icons\ruby_gear.png" />
+    <Content Include="Content\images\icons\ruby_get.png" />
+    <Content Include="Content\images\icons\ruby_go.png" />
+    <Content Include="Content\images\icons\ruby_key.png" />
+    <Content Include="Content\images\icons\ruby_link.png" />
+    <Content Include="Content\images\icons\ruby_put.png" />
+    <Content Include="Content\images\icons\script.png" />
+    <Content Include="Content\images\icons\script_add.png" />
+    <Content Include="Content\images\icons\script_code.png" />
+    <Content Include="Content\images\icons\script_code_red.png" />
+    <Content Include="Content\images\icons\script_delete.png" />
+    <Content Include="Content\images\icons\script_edit.png" />
+    <Content Include="Content\images\icons\script_error.png" />
+    <Content Include="Content\images\icons\script_gear.png" />
+    <Content Include="Content\images\icons\script_go.png" />
+    <Content Include="Content\images\icons\script_key.png" />
+    <Content Include="Content\images\icons\script_lightning.png" />
+    <Content Include="Content\images\icons\script_link.png" />
+    <Content Include="Content\images\icons\script_palette.png" />
+    <Content Include="Content\images\icons\script_save.png" />
+    <Content Include="Content\images\icons\server.png" />
+    <Content Include="Content\images\icons\server_add.png" />
+    <Content Include="Content\images\icons\server_chart.png" />
+    <Content Include="Content\images\icons\server_compressed.png" />
+    <Content Include="Content\images\icons\server_connect.png" />
+    <Content Include="Content\images\icons\server_database.png" />
+    <Content Include="Content\images\icons\server_delete.png" />
+    <Content Include="Content\images\icons\server_edit.png" />
+    <Content Include="Content\images\icons\server_error.png" />
+    <Content Include="Content\images\icons\server_go.png" />
+    <Content Include="Content\images\icons\server_key.png" />
+    <Content Include="Content\images\icons\server_lightning.png" />
+    <Content Include="Content\images\icons\server_link.png" />
+    <Content Include="Content\images\icons\server_uncompressed.png" />
+    <Content Include="Content\images\icons\shading.png" />
+    <Content Include="Content\images\icons\shape_align_bottom.png" />
+    <Content Include="Content\images\icons\shape_align_center.png" />
+    <Content Include="Content\images\icons\shape_align_left.png" />
+    <Content Include="Content\images\icons\shape_align_middle.png" />
+    <Content Include="Content\images\icons\shape_align_right.png" />
+    <Content Include="Content\images\icons\shape_align_top.png" />
+    <Content Include="Content\images\icons\shape_flip_horizontal.png" />
+    <Content Include="Content\images\icons\shape_flip_vertical.png" />
+    <Content Include="Content\images\icons\shape_group.png" />
+    <Content Include="Content\images\icons\shape_handles.png" />
+    <Content Include="Content\images\icons\shape_move_back.png" />
+    <Content Include="Content\images\icons\shape_move_backwards.png" />
+    <Content Include="Content\images\icons\shape_move_forwards.png" />
+    <Content Include="Content\images\icons\shape_move_front.png" />
+    <Content Include="Content\images\icons\shape_rotate_anticlockwise.png" />
+    <Content Include="Content\images\icons\shape_rotate_clockwise.png" />
+    <Content Include="Content\images\icons\shape_square.png" />
+    <Content Include="Content\images\icons\shape_square_add.png" />
+    <Content Include="Content\images\icons\shape_square_delete.png" />
+    <Content Include="Content\images\icons\shape_square_edit.png" />
+    <Content Include="Content\images\icons\shape_square_error.png" />
+    <Content Include="Content\images\icons\shape_square_go.png" />
+    <Content Include="Content\images\icons\shape_square_key.png" />
+    <Content Include="Content\images\icons\shape_square_link.png" />
+    <Content Include="Content\images\icons\shape_ungroup.png" />
+    <Content Include="Content\images\icons\shield.png" />
+    <Content Include="Content\images\icons\shield_add.png" />
+    <Content Include="Content\images\icons\shield_delete.png" />
+    <Content Include="Content\images\icons\shield_go.png" />
+    <Content Include="Content\images\icons\sitemap.png" />
+    <Content Include="Content\images\icons\sitemap_color.png" />
+    <Content Include="Content\images\icons\sound.png" />
+    <Content Include="Content\images\icons\sound_add.png" />
+    <Content Include="Content\images\icons\sound_delete.png" />
+    <Content Include="Content\images\icons\sound_low.png" />
+    <Content Include="Content\images\icons\sound_mute.png" />
+    <Content Include="Content\images\icons\sound_none.png" />
+    <Content Include="Content\images\icons\spellcheck.png" />
+    <Content Include="Content\images\icons\sport_8ball.png" />
+    <Content Include="Content\images\icons\sport_basketball.png" />
+    <Content Include="Content\images\icons\sport_football.png" />
+    <Content Include="Content\images\icons\sport_golf.png" />
+    <Content Include="Content\images\icons\sport_raquet.png" />
+    <Content Include="Content\images\icons\sport_shuttlecock.png" />
+    <Content Include="Content\images\icons\sport_soccer.png" />
+    <Content Include="Content\images\icons\sport_tennis.png" />
+    <Content Include="Content\images\icons\star.png" />
+    <Content Include="Content\images\icons\status_away.png" />
+    <Content Include="Content\images\icons\status_busy.png" />
+    <Content Include="Content\images\icons\status_offline.png" />
+    <Content Include="Content\images\icons\status_online.png" />
+    <Content Include="Content\images\icons\stop.png" />
+    <Content Include="Content\images\icons\style.png" />
+    <Content Include="Content\images\icons\style_add.png" />
+    <Content Include="Content\images\icons\style_delete.png" />
+    <Content Include="Content\images\icons\style_edit.png" />
+    <Content Include="Content\images\icons\style_go.png" />
+    <Content Include="Content\images\icons\sum.png" />
+    <Content Include="Content\images\icons\tab.png" />
+    <Content Include="Content\images\icons\table.png" />
+    <Content Include="Content\images\icons\table_add.png" />
+    <Content Include="Content\images\icons\table_delete.png" />
+    <Content Include="Content\images\icons\table_edit.png" />
+    <Content Include="Content\images\icons\table_error.png" />
+    <Content Include="Content\images\icons\table_gear.png" />
+    <Content Include="Content\images\icons\table_go.png" />
+    <Content Include="Content\images\icons\table_key.png" />
+    <Content Include="Content\images\icons\table_lightning.png" />
+    <Content Include="Content\images\icons\table_link.png" />
+    <Content Include="Content\images\icons\table_multiple.png" />
+    <Content Include="Content\images\icons\table_refresh.png" />
+    <Content Include="Content\images\icons\table_relationship.png" />
+    <Content Include="Content\images\icons\table_row_delete.png" />
+    <Content Include="Content\images\icons\table_row_insert.png" />
+    <Content Include="Content\images\icons\table_save.png" />
+    <Content Include="Content\images\icons\table_sort.png" />
+    <Content Include="Content\images\icons\tab_add.png" />
+    <Content Include="Content\images\icons\tab_delete.png" />
+    <Content Include="Content\images\icons\tab_edit.png" />
+    <Content Include="Content\images\icons\tab_go.png" />
+    <Content Include="Content\images\icons\tag.png" />
+    <Content Include="Content\images\icons\tag_blue.png" />
+    <Content Include="Content\images\icons\tag_blue_add.png" />
+    <Content Include="Content\images\icons\tag_blue_delete.png" />
+    <Content Include="Content\images\icons\tag_blue_edit.png" />
+    <Content Include="Content\images\icons\tag_green.png" />
+    <Content Include="Content\images\icons\tag_orange.png" />
+    <Content Include="Content\images\icons\tag_pink.png" />
+    <Content Include="Content\images\icons\tag_purple.png" />
+    <Content Include="Content\images\icons\tag_red.png" />
+    <Content Include="Content\images\icons\tag_yellow.png" />
+    <Content Include="Content\images\icons\telephone.png" />
+    <Content Include="Content\images\icons\telephone_add.png" />
+    <Content Include="Content\images\icons\telephone_delete.png" />
+    <Content Include="Content\images\icons\telephone_edit.png" />
+    <Content Include="Content\images\icons\telephone_error.png" />
+    <Content Include="Content\images\icons\telephone_go.png" />
+    <Content Include="Content\images\icons\telephone_key.png" />
+    <Content Include="Content\images\icons\telephone_link.png" />
+    <Content Include="Content\images\icons\television.png" />
+    <Content Include="Content\images\icons\television_add.png" />
+    <Content Include="Content\images\icons\television_delete.png" />
+    <Content Include="Content\images\icons\textfield.png" />
+    <Content Include="Content\images\icons\textfield_add.png" />
+    <Content Include="Content\images\icons\textfield_delete.png" />
+    <Content Include="Content\images\icons\textfield_key.png" />
+    <Content Include="Content\images\icons\textfield_rename.png" />
+    <Content Include="Content\images\icons\text_align_center.png" />
+    <Content Include="Content\images\icons\text_align_justify.png" />
+    <Content Include="Content\images\icons\text_align_left.png" />
+    <Content Include="Content\images\icons\text_align_right.png" />
+    <Content Include="Content\images\icons\text_allcaps.png" />
+    <Content Include="Content\images\icons\text_bold.png" />
+    <Content Include="Content\images\icons\text_columns.png" />
+    <Content Include="Content\images\icons\text_dropcaps.png" />
+    <Content Include="Content\images\icons\text_heading_1.png" />
+    <Content Include="Content\images\icons\text_heading_2.png" />
+    <Content Include="Content\images\icons\text_heading_3.png" />
+    <Content Include="Content\images\icons\text_heading_4.png" />
+    <Content Include="Content\images\icons\text_heading_5.png" />
+    <Content Include="Content\images\icons\text_heading_6.png" />
+    <Content Include="Content\images\icons\text_horizontalrule.png" />
+    <Content Include="Content\images\icons\text_indent.png" />
+    <Content Include="Content\images\icons\text_indent_remove.png" />
+    <Content Include="Content\images\icons\text_italic.png" />
+    <Content Include="Content\images\icons\text_kerning.png" />
+    <Content Include="Content\images\icons\text_letterspacing.png" />
+    <Content Include="Content\images\icons\text_letter_omega.png" />
+    <Content Include="Content\images\icons\text_linespacing.png" />
+    <Content Include="Content\images\icons\text_list_bullets.png" />
+    <Content Include="Content\images\icons\text_list_numbers.png" />
+    <Content Include="Content\images\icons\text_lowercase.png" />
+    <Content Include="Content\images\icons\text_padding_bottom.png" />
+    <Content Include="Content\images\icons\text_padding_left.png" />
+    <Content Include="Content\images\icons\text_padding_right.png" />
+    <Content Include="Content\images\icons\text_padding_top.png" />
+    <Content Include="Content\images\icons\text_replace.png" />
+    <Content Include="Content\images\icons\text_signature.png" />
+    <Content Include="Content\images\icons\text_smallcaps.png" />
+    <Content Include="Content\images\icons\text_strikethrough.png" />
+    <Content Include="Content\images\icons\text_subscript.png" />
+    <Content Include="Content\images\icons\text_superscript.png" />
+    <Content Include="Content\images\icons\text_underline.png" />
+    <Content Include="Content\images\icons\text_uppercase.png" />
+    <Content Include="Content\images\icons\thumb_down.png" />
+    <Content Include="Content\images\icons\thumb_up.png" />
+    <Content Include="Content\images\icons\tick.png" />
+    <Content Include="Content\images\icons\time.png" />
+    <Content Include="Content\images\icons\timeline_marker.png" />
+    <Content Include="Content\images\icons\time_add.png" />
+    <Content Include="Content\images\icons\time_delete.png" />
+    <Content Include="Content\images\icons\time_go.png" />
+    <Content Include="Content\images\icons\transmit.png" />
+    <Content Include="Content\images\icons\transmit_add.png" />
+    <Content Include="Content\images\icons\transmit_blue.png" />
+    <Content Include="Content\images\icons\transmit_delete.png" />
+    <Content Include="Content\images\icons\transmit_edit.png" />
+    <Content Include="Content\images\icons\transmit_error.png" />
+    <Content Include="Content\images\icons\transmit_go.png" />
+    <Content Include="Content\images\icons\tux.png" />
+    <Content Include="Content\images\icons\user.png" />
+    <Content Include="Content\images\icons\user_add.png" />
+    <Content Include="Content\images\icons\user_comment.png" />
+    <Content Include="Content\images\icons\user_delete.png" />
+    <Content Include="Content\images\icons\user_edit.png" />
+    <Content Include="Content\images\icons\user_female.png" />
+    <Content Include="Content\images\icons\user_go.png" />
+    <Content Include="Content\images\icons\user_gray.png" />
+    <Content Include="Content\images\icons\user_green.png" />
+    <Content Include="Content\images\icons\user_orange.png" />
+    <Content Include="Content\images\icons\user_red.png" />
+    <Content Include="Content\images\icons\user_suit.png" />
+    <Content Include="Content\images\icons\vcard.png" />
+    <Content Include="Content\images\icons\vcard_add.png" />
+    <Content Include="Content\images\icons\vcard_delete.png" />
+    <Content Include="Content\images\icons\vcard_edit.png" />
+    <Content Include="Content\images\icons\vector.png" />
+    <Content Include="Content\images\icons\vector_add.png" />
+    <Content Include="Content\images\icons\vector_delete.png" />
+    <Content Include="Content\images\icons\wand.png" />
+    <Content Include="Content\images\icons\weather_clouds.png" />
+    <Content Include="Content\images\icons\weather_cloudy.png" />
+    <Content Include="Content\images\icons\weather_lightning.png" />
+    <Content Include="Content\images\icons\weather_rain.png" />
+    <Content Include="Content\images\icons\weather_snow.png" />
+    <Content Include="Content\images\icons\weather_sun.png" />
+    <Content Include="Content\images\icons\webcam.png" />
+    <Content Include="Content\images\icons\webcam_add.png" />
+    <Content Include="Content\images\icons\webcam_delete.png" />
+    <Content Include="Content\images\icons\webcam_error.png" />
+    <Content Include="Content\images\icons\world.png" />
+    <Content Include="Content\images\icons\world_add.png" />
+    <Content Include="Content\images\icons\world_delete.png" />
+    <Content Include="Content\images\icons\world_edit.png" />
+    <Content Include="Content\images\icons\world_go.png" />
+    <Content Include="Content\images\icons\world_link.png" />
+    <Content Include="Content\images\icons\wrench.png" />
+    <Content Include="Content\images\icons\wrench_orange.png" />
+    <Content Include="Content\images\icons\xhtml.png" />
+    <Content Include="Content\images\icons\xhtml_add.png" />
+    <Content Include="Content\images\icons\xhtml_delete.png" />
+    <Content Include="Content\images\icons\xhtml_go.png" />
+    <Content Include="Content\images\icons\xhtml_valid.png" />
+    <Content Include="Content\images\icons\zoom.png" />
+    <Content Include="Content\images\icons\zoom_in.png" />
+    <Content Include="Content\images\icons\zoom_out.png" />
+    <Content Include="Content\images\loadingAnimation.gif" />
+    <Content Include="Content\images\macFFBgHack.png" />
+    <Content Include="Content\images\search48.png" />
+    <Content Include="Content\images\sig_trade_logo.png" />
+    <Content Include="Content\images\title_2_white.png" />
+    <Content Include="Content\images\title_3.png" />
+    <Content Include="Content\images\wait.gif" />
+    <Content Include="Content\jquery.autocomplete.min.js" />
+    <Content Include="Views\Meetings\Create.aspx" />
+    <Content Include="Views\Meetings\Edit.aspx" />
+    <Content Include="Views\Meetings\Index.aspx" />
+    <Content Include="Views\Report\GenericReport.aspx" />
+    <Content Include="App_GlobalResources\Tooltips.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Tooltips.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Tooltips.es-ES.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Tooltips.es-ES.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Tooltips.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Tooltips.fr-FR1.designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Views\Report\Country.rdlc" />
+    <EmbeddedResource Include="Views\Report\Paragraph.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\blueprint\plugins\buttons\icons\" />
+    <Folder Include="Content\blueprint\plugins\fancy-type\" />
+    <Folder Include="Content\blueprint\plugins\link-icons\icons\" />
+    <Folder Include="Content\blueprint\plugins\rtl\" />
+    <Folder Include="Content\blueprint\src\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\WebProfileBuilder\WebProfileBuilder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2179</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
